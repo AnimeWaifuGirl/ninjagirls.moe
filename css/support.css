@@ -1,0 +1,107 @@
+ @charset "utf-8";
+/* CSS Document */
+/* support.css */
+/****************************************************************************************
+
+    Support
+
+****************************************************************************************/
+
+
+/*----------------------------------
+
+    コンテンツ
+
+----------------------------------*/
+
+.supportBox {
+    width:70%;
+    padding:0 15% 5%;
+    height:auto;
+    border-radius:10px;
+    border-top: none;
+    width: 100%;
+    box-sizing: border-box;
+}
+.supportBox h2,
+.supportBox ul li,
+.supportBox p {
+    margin-bottom:15px;
+}
+.supportBox h2 {
+    background: #f45f77;
+    padding:1.5%;
+    color:#FFF;
+    text-align:center;
+    border-radius:50px;
+}
+.supportBox p span {
+    font-weight: bold;
+}
+.buttonBox {
+    margin-bottom:40px;
+}
+.buttonBox li {
+    display:inline-block;
+    position: relative;
+    margin:20px 1.5% 0;
+    text-align:center;
+    cursor:pointer;
+}
+.buttonBox li.support_ios {
+    background:url(../images/support/support_ios_btn_on.png) no-repeat center;
+    background-size:180px;
+}
+.buttonBox li.support_android {
+    background:url(../images/support/support_android_btn_on.png) no-repeat center;
+    background-size:180px;
+}
+.buttonBox li.support_facebook {
+    background:url(../images/support/support_facebook_btn_on.png) no-repeat center;
+    background-size:180px;
+}
+.buttonBox li.support_other {
+    background:url(../images/support/support_other_btn_on.png) no-repeat center;
+    background-size:180px;
+}
+.buttonBox li img {
+  width: 180px;
+  margin: 0 auto;
+  cursor: pointer;
+    -webkit-transition:all 0.3s ease;
+    transition:all 0.3s ease;
+}
+.buttonBox li img:hover {
+    opacity:0;
+}
+.buttonBox li a{
+    width:100%;
+    display:block;
+}
+
+@media screen and (max-width: 900px){
+    .buttonBox li {
+        display: block;
+    }
+}
+
+
+/*----------------------------------------------------------------------------------------------------
+
+    ★640px以下の場合
+
+----------------------------------------------------------------------------------------------------*/
+
+@media screen and (max-width: 640px){
+  .supportBox {
+    width:100%;
+    padding:5%;
+    height:auto;
+    border-radius:0px;
+    margin:0;
+  }
+  .supportBox h2 {
+    text-align: left;
+    padding: 1.5% 6%;
+  }
+}

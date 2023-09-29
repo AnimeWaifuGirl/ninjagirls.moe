@@ -1,0 +1,108 @@
+ @charset "utf-8";
+/* CSS Document */
+/* about.css */
+/****************************************************************************************
+
+    about
+
+****************************************************************************************/
+
+
+/*----------------------------------
+
+    コンテンツ
+
+----------------------------------*/
+
+dl{
+
+    width:70%;
+    background:#ffebee;
+    padding:5% 15%;
+    height:auto;
+    border-radius:10px;
+    border-top: none;
+    width: 100%;
+    box-sizing: border-box;
+}
+dl dt,dl dd{
+    margin-bottom:15px;
+}
+
+dl dt {
+border-top: 0px;
+    background: #f45f77;
+clear: left;
+float: left;
+width: 30%;
+padding:1%;
+    color:#FFF;
+    text-align:center;
+    border-radius:50px;
+}
+
+dl dd {
+border:0;
+padding:1%;
+margin-left: 40%;
+}
+
+
+/*----------------------------------------------------------------------------------------------------
+
+    ★640px以下の場合
+
+----------------------------------------------------------------------------------------------------*/
+
+
+@media screen and (max-width: 640px){
+
+.aboutBox{
+    padding:0 0%;
+}
+
+dl{
+
+    width:100%;
+    background:#ffebee;
+    padding:5%;
+    height:auto;
+    border-radius:0px;
+    margin:0;
+}
+dl{
+border-top: none;
+width: 100%;
+}
+
+dl dd {
+border:0;
+margin-left: 0%;
+    width: 100%;
+}
+
+dt,dd {
+    padding:1%;
+    border:0px;
+    margin:1% 0;
+    height:auto;
+    vertical-align:middle;
+}
+
+
+dl dt {
+border-top: 0px;
+    background: #f45f77;
+float:none;
+	text-align:left;
+width: 97%;
+    border-radius:3px;
+	padding:1% 0 1% 3%;
+}
+}
+
+
+
+
+
+

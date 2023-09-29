@@ -1,0 +1,536 @@
+ @charset "utf-8";
+/* CSS Document */
+/* common.css */
+/****************************************************************************************
+
+    全ページ共通
+
+****************************************************************************************/
+
+
+
+/*----------------------------------
+
+ 汎用
+
+----------------------------------*/
+
+@import url('https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,800,900');
+@import url('https://fonts.googleapis.com/css?family=Acme');
+@import url('https://fonts.googleapis.com/css?family=Signika+Negative:300,400,600,700');
+
+
+iframe{
+	vertical-align:bottom;
+}
+.pc{
+    display:block;
+}
+.sp{
+    display:none;
+}
+
+
+body{
+    font-family: 'Raleway', sans-serif;
+    font-size:100%;
+}
+body:before{
+    content:"";
+    display:block;
+    height:auto;
+    width:1px;
+    background:#F00;
+    position:absolute;
+}
+.wrapper{
+    background:url(../images/common/bg_hr_n.png) no-repeat -100px 0px ,
+    url(../images/common/bg_hr.jpg) repeat-y 1600px ,
+    url(../images/common/bg_hr.jpg) repeat-y 1000px ,
+    url(../images/common/bg_hr.jpg) repeat-y 400px,
+    url(../images/common/sub_bg.jpg) repeat;
+    padding:45px 0 0 0;
+    width:100%;
+    overflow:hidden;
+}
+.mainContents{
+    padding:7% 0;
+}
+.contents{
+    width:100%;
+    max-width:1200px;
+    margin:0 auto;
+    position:relative;
+}
+h1{
+    text-align:center;
+    margin:0 auto 6%;
+    width:50%;
+}
+img{
+    width:100%;
+}
+a{
+  outline: none;
+}
+a:focus{
+  outline: none;
+}
+
+/* ページトップ */
+.pagetop{
+    position:absolute;
+    top: 10%;
+    right: 1%;
+    z-index:100;
+    cursor:pointer;
+}
+.pagetop:hover{
+	animation:jump1 2s 1;
+	-webkit-animation:jump1 2s 1;
+	-moz-animation:jump1 2s 1;
+}
+
+/****--------- １回ジャンプ ---------****/
+
+@keyframes jump1{
+	0%{transform:translate(0,0px);}
+	10%{transform:translate(0,-10%);}
+	15%{transform:translate(0,0px);}
+	100%{transform:translate(0,0px);}
+}
+@-webkit-keyframes jump1{
+	0%{-webkit-transform:translate(0,0px);}
+	10%{-webkit-transform:translate(0,-10%);}
+	15%{-webkit-transform:translate(0,0px);}
+	100%{-webkit-transform:translate(0,0px);}
+}
+@-moz-keyframes jump1{
+	0%{-moz-transform:translate(0,0px);}
+	10%{-moz-transform:translate(0,-10%);}
+	15%{-moz-transform:translate(0,0px);}
+	100%{-moz-transform:translate(0,0px);}
+}
+
+
+/*----------------------------------
+
+ ボタンホバー
+
+----------------------------------*/
+
+
+/* PreLaunch.M事前登録ボタンe */
+.preBtnMe{
+	background:url(../images/common/pre_btn_me_on.png) no-repeat;
+	background-size:100%;
+}
+.preBtnMe img{
+	transition:all 0.3s ease;
+	-moz-transition:all 0.3s ease;
+	-webkit-transition:all 0.3s ease;
+}
+.preBtnMe img:hover{
+	opacity:0;
+}
+/* Twitter事前登録ボタン */
+.preBtnTw{
+	background:url(../images/common/pre_btn_tw_on.png) no-repeat;
+	background-size:100%;
+}
+.preBtnTw img{
+	transition:all 0.3s ease;
+	-moz-transition:all 0.3s ease;
+	-webkit-transition:all 0.3s ease;
+}
+.preBtnTw img:hover{
+	opacity:0;
+}
+/* Tell me more!ボタン */
+.preBtnMore{
+	background:#fff;
+	background-size:100%;
+	border-radius:13px;
+	box-shadow:0px 4px 0px 0px rgba(7,0,42,0.30);
+	-moz-box-shadow:0px 4px 0px 0px rgba(7,0,42,0.30);
+	-webkit-box-shadow:0px 4px 0px 0px rgba(7,0,42,0.30);
+}
+.preBtnMore img{
+	vertical-align:bottom;
+}
+.preBtnMore a{
+	vertical-align:bottom;
+	transition:all 0.3s ease;
+	-moz-transition:all 0.3s ease;
+	-webkit-transition:all 0.3s ease;
+	vertical-align: bottom;
+	display: block;
+}
+.preBtnMore a:hover{
+	opacity:0.8;
+}
+
+
+/*----------------------------------
+
+    header
+
+----------------------------------*/
+
+
+
+header{
+    width:100%;
+    height:45px;
+    display:block;
+    position:relative;
+    z-index:1000;
+    background:url(../images/top/menu_hr.png) no-repeat center top,url(../images/top/menu_hr.png) no-repeat center bottom,rgba(0,0,0,0.8);
+}
+
+
+/*------ ロゴ ------*/
+
+nav .logo{
+    width:17%;
+    position:absolute;
+    z-index:30;
+    top:-60%;
+}
+nav .logo img{
+    width:100%;
+    height:auto;
+}
+
+/*------ メニュー ------*/
+
+nav ul{
+    letter-spacing: -.40em;/* inline-blockの隙間防止 */
+    text-align:left;
+    /*--overflow:hidden;--*/
+    position:relative;
+    top:0;
+    width:100%;
+    left:20.8%;
+}
+nav ul li{
+    letter-spacing: normal;/* inline-blockの隙間防止 */
+    width:13.3%;
+    border-left:1px solid #646464;
+    height:41px;
+    display:inline-block;
+    margin:2px 0 0 0;
+    text-align:center;
+    cursor:pointer;
+    /*--overflow:hidden;--*/
+    position: relative;
+}
+nav ul li img{
+    width:75%;
+}
+nav ul li:first-child img{
+    /*--width:20%;--*/
+}
+nav ul li a{
+    width:100%;
+    display:block;
+    padding:8% 0 0;
+    height:100%;
+}
+nav ul li:last-child{
+    border-right:1px solid #646464;
+}
+nav ul li:hover{
+    background:#e50a82;
+}
+nav ul li>ul{
+    display: block;
+    clear: both;
+    position: absolute;
+    left: -1px;
+    top: 43px;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+    height: 0;
+    overflow: hidden;
+}
+nav ul li>ul>li{
+    display: block;
+    width: 100%;
+    clear: both;
+    background: rgba(0,0,0,0.8);
+    border-right: 1px solid #646464;
+    border-bottom: 1px solid #646464;
+    margin-top: 0;
+}
+nav ul li>ul>li>a{
+    padding-top: 8% !important;
+}
+nav ul li a label#sub{
+  display: block;
+  padding: 8% 0;
+  cursor: pointer;
+}
+input#support,
+input#support_sp{
+  display: none;
+}
+input#support:checked ~ header.pc nav div.contents ul>li>ul {
+  height: 168px;
+}
+
+/*------ 事前登録はこちら ------*/
+
+nav .preBtn{
+    width:17%;
+    position:absolute;
+    top:-20%;
+    right:0;
+	background:#fff;
+	border-radius:13px;
+	background-size:100%;
+	zoom: 1;
+	box-shadow:0px 3px 0px 0px rgba(0,0,0,0.30);
+	-moz-box-shadow:0px 3px 0px 0px rgba(0,0,0,0.30);
+	-webkit-box-shadow:0px 3px 0px 0px rgba(0,0,0,0.30);
+}
+nav .preBtn img{
+	vertical-align:bottom;
+}
+nav .preBtn a{
+    width:100%;
+    height:auto;
+	transition:all 0.3s ease;
+	-moz-transition:all 0.3s ease;
+	-webkit-transition:all 0.3s ease;
+	display:block;
+}
+nav .preBtn a:hover{
+	opacity:0.8;
+}
+
+
+/*----------------------------------
+
+    footer
+
+----------------------------------*/
+
+
+footer{
+    width:100%;
+    background:url(../images/top/footer_bg.jpg);
+    position:relative;
+    padding:40px 0;
+    text-align:center;
+	font-family: 'Signika Negative', sans-serif;
+}
+footer .sns li{
+    display:inline-block;
+    margin:0 5px 20px;
+}
+footer .sns li:hover{
+	opacity:0.8;
+}
+footer .sns li img{
+    width:50px;
+}
+footer .aboutus{
+    margin:0 0 20px;
+}
+
+
+
+
+
+
+
+/*----------------------------------------------------------------------------------------------------
+
+    ★800px以下の場合
+
+----------------------------------------------------------------------------------------------------*/
+
+
+@media screen and (max-width: 800px){
+
+
+h1{
+    width:80%;
+}
+
+
+/*------ ロゴ ------*/
+
+nav .logo{
+    width:17%;
+    position:absolute;
+    z-index:30;
+    top:-30%;
+}
+/*------ 事前登録はこちら ------*/
+
+nav .preBtn{
+    width:20%;
+    position:absolute;
+    top:-10%;
+    right:0;
+}
+nav .preBtn img{
+    width:100%;
+    height:auto;
+}
+
+
+}
+
+
+/*----------------------------------------------------------------------------------------------------
+
+    ★640px以下の場合
+
+----------------------------------------------------------------------------------------------------*/
+
+
+@media screen and (max-width: 640px){
+
+
+.pc{
+    display:none;
+}
+.sp{
+    display:block;
+}
+
+h1{
+    width:98%;
+}
+.menuBtn{
+    position:fixed;
+    top:1%;
+    right:1%;
+    width:13%;
+    cursor:pointer;
+    z-index:1000;
+}
+.preBtn{
+    position:fixed;
+    top:1%;
+    right:15%;
+    width:35%;
+    cursor:pointer;
+    z-index:1100;
+
+}
+.menuBox {
+    width:100%;
+    position:fixed;
+    top:0;
+    z-index:999;
+    padding:15% 0 0 0;
+}
+.menuBox.sp ul{
+    background:rgba(0,0,0,0.8);
+    padding-top:20%;
+    margin:-19% 0 0;
+}
+.menuBox li:first-child{
+    border-top:1px solid rgba(255,255,255,0.5);
+}
+.menuBox li{
+    font-size:150%;
+    border-bottom:1px solid rgba(255,255,255,0.5);
+    text-align:center;
+}
+.menuBox li a{
+    color:#FFF;
+    width:100%;
+    padding:3% 0;
+    display:block;
+
+    text-decoration:none;
+}
+.menuBox li:nth-of-type(5){
+    color: #fff;
+}
+.menuBox.sp li>ul{
+    background: none;
+    position: absolute;
+    height: 0;
+    margin-top: 0;
+    padding: 0 ;
+    overflow: hidden;
+    width: 100%;
+}
+.menuBox.sp li>ul>li{
+    background: none;
+    font-size: 80%;
+    width: 50%;
+    float: left;
+    background:rgba(0,0,0,0.8);
+}
+.menuBox.sp li>ul>li:nth-of-type(2){
+    border-top: 1px solid rgba(255,255,255,0.5);
+}
+.menuBox.sp ul>li label{
+    display: block;
+    cursor: pointer;
+    padding: 3% 0;
+}
+input#support,
+input#support_sp{
+    display: none;
+}
+input#support_sp:checked ~ .menuBox.sp li>ul,
+input#support_sp:checked ~ .main .menuBox.sp li>ul{
+    height: 93%;
+}
+input#support_sp:checked ~ .menuBox.sp li>ul:before,
+input#support_sp:checked ~ .main .menuBox.sp li>ul:before{
+    content: "";
+    width: 1px;
+    height: 23.5%;
+    background: rgba(255,255,255,0.5);
+    position: absolute;
+    left: 50%;
+    top: 0%;
+}
+
+.menuBox .preBtnSpMe,
+.menuBox .preBtnSpTw{
+	background:none;
+	display:inline-block;
+	width:48%;
+	padding:2% 0 0 0;
+}
+.menuBox .preBtnSpMe{
+	text-align:right;
+	margin:0 1% 0 0;
+}
+.menuBox .preBtnSpTw{
+	text-align:left;
+	margin:0 0 0 1%;
+}
+.menuBox .preBtnSpMe img,
+.menuBox .preBtnSpTw img{
+	width:90%;
+}
+
+
+/*  ----ページトップ---------- */
+
+.pagetop{
+    position:absolute;
+    top:10%;
+    right: 1%;
+    z-index:100;
+    width:20%;
+}
+.pagetop_c{
+    top:10%;
+}
+
+}

@@ -1,0 +1,823 @@
+ @charset "utf-8";
+/* CSS Document */
+/* how.css */
+
+/*====================================
+
+----------------------------------
+Structure
+----------------------------------
+
+0. General
+    0.1 キャラアニメーション設定
+    0.2 各ブロック共通設定
+        ・stamp
+        ・イメージ画像
+        ・[sp]コンテンツ番号調整
+1. contents
+    1.1 akari
+    1.2 enju
+    1.3 ricka
+    1.4 myu
+    1.5 tengge
+
+sp対応：@media screen and (max-width: 640px)　各パーツ直下
+
+
+====================================*/
+
+
+
+/*============================================================================
+
+0. General
+
+============================================================================*/
+
+/*　キャラアニメーション設定
+--------------------------------------------- */
+.charaFade{
+    opacity:0;
+}
+.visible .charaFade{
+    opacity:1;
+    animation: fadeIn 1.2s ease 0s 1 normal;
+    -webkit-animation: fadeIn 1.2s ease 0s 1 normal;
+}
+    @keyframes fadeIn {
+        0% {opacity: 0}
+        100% {opacity: 1}
+    }
+
+    @-webkit-keyframes fadeIn {
+        0% {opacity: 0}
+        100% {opacity: 1}
+    }
+
+
+/*　各ブロック共通設定
+--------------------------------------------- */
+
+#how .howList li{
+    width:84%;
+    position:relative;
+    margin:0 auto 50px;
+    opacity: 0;
+    box-sizing: border-box;
+    border-radius: 10px;
+    padding: 0px 0 5% !important;
+}
+@media screen and (max-width: 640px){
+
+    #how .howList li{
+        width:100%;
+        border-radius: 10px;
+    }
+}
+
+
+#how .howList li .no,
+#how .howList li .stamp,
+#how .howList li .right,
+#how .howList li .left{
+    position:absolute;
+}
+
+@media screen and (max-width: 640px){
+    #how .howList .smallChara,
+    #how .howList .enju .bigChara,
+    #how .howList .myu .bigChara{
+        display: none;
+    }
+    #how .howList .enju .smallChara,
+    #how .howList .myu .smallChara{
+        display:block;
+    }
+}
+
+/* スタンプ */
+#how .howList li .stamp{
+    width:100%;
+    margin:0 auto;
+    height:330px;
+    overflow:hidden;
+    top:0;
+}
+@media screen and (max-width: 640px){
+    #how .howList li .stamp{
+        width:100%;
+    }
+}
+    #how .howList li .stamp img{
+        width:40%;
+    }
+    @media screen and (max-width: 640px){
+        #how .howList li .stamp img{
+            width:60%;
+        }
+    }
+
+    #how .howList li .subCap{
+        font-size:26px;
+        font-weight:600;
+        color:#2b0d00;
+        position: relative;
+    }
+    @media screen and (max-width: 640px){
+        #how .howList li .subCap{
+            font-size:1.2em;
+            font-weight:600;
+            color:#2b0d00;
+            margin-top:0em;
+            z-index : 11;
+            position: relative;
+        }
+    }
+
+    #how .howList li .subCap span{
+        font-size:30px;
+        font-weight:800;
+    }
+    @media screen and (max-width: 640px){
+        #how .howList li .subCap span{
+            font-size:1em;
+            font-weight:800;
+        }
+    }
+
+/* イメージ画像 */
+#how .howList li .img{
+    overflow:hidden;
+}
+#how .howList li .img img{
+    width:64%;
+}
+#how .howList li.tengge .img img{
+    width:100%;
+}
+@media screen and (max-width: 640px){
+    #how .howList li .img{
+        overflow:hidden;
+    }
+    #how .howList li .img img{
+        width:70%;
+    }
+    #how .howList li.tengge .img img{
+        width:100%;
+    }
+}
+
+/* [sp]コンテンツ番号調整 */
+@media screen and (max-width: 640px){
+    #how .howList li .no{
+        position:absolute;
+        z-index:10;
+    }
+}
+
+
+
+
+/*============================================================================
+
+1. contents
+
+============================================================================*/
+
+/* akari
+------------------------------------------------------------------------ */
+
+#how .howList .akari{
+    background:#fcd5da;
+    border-radius:10px;
+    /*padding:150px 0 60px 0;*/
+    padding:0;
+}
+@media screen and (max-width: 640px){
+    #how .howList .akari{
+        background:#fcd5da;
+        border-radius:10px;
+        padding:0px 0 0px 0;
+    }
+}
+
+#how .howList .akari .no{
+    top:10px;
+    left:30px;
+    width:14%;
+}
+@media screen and (max-width: 640px){
+    #how .howList .akari .no{
+        width:12%;
+        left:4%;
+    }
+}
+
+#how .howList .akari .subCap{
+    width:62%;
+    z-index:9;
+    padding:2em 0 2em 20%;
+
+}
+@media screen and (max-width: 640px){
+    #how .howList .akari .subCap{
+        top:1.6em;
+        left:4%;
+        width:70%;
+        z-index:11;
+        padding:0;
+        padding:1em 0 3em 3%;
+    }
+}
+
+#how .howList .akari .stamp img{
+    position:absolute;
+    top:-40px;
+    z-index:8;
+    right:-50px;
+}
+@media screen and (max-width: 640px){
+    #how .howList .akari .stamp img{
+        position:absolute;
+        top:-40px;
+        z-index:8;
+        right:-50px;
+    }
+}
+
+#how .howList .akari .subCap span{
+    color:#ff0a43;
+}
+@media screen and (max-width: 640px){
+    #how .howList .akari .subCap span{
+        color:#ff0a43;
+    }
+
+}
+
+#how .howList .akari .img{
+    background:#ff938b;
+    padding:30px 0;
+    text-align:center;
+}
+@media screen and (max-width: 640px){
+    #how .howList .akari .img{
+        background:#ff938b;
+        padding:30px 0;
+        text-align:center;
+    }
+}
+
+#how .howList .akari .img img{
+    position:relative;
+    z-index:10;
+}
+@media screen and (max-width: 640px){
+    #how .howList .akari .img img{
+        position:relative;
+        z-index:10;
+    }
+
+}
+
+#how .howList .akari .right{
+    right:-90px;
+    bottom:0px;
+    z-index:9;
+    width:27%;
+    min-width:230px;
+}
+@media screen and (max-width: 640px){
+    #how .howList .akari .right{
+        right:-10%;
+        top:-5%;
+        z-index:9;
+        width:100%;
+		text-align:right;
+        min-width:auto;
+    }
+    #how .howList .akari .right img{
+		width:37%;
+	}
+}
+
+#how .howList .akari .left{
+    bottom:30px;
+    left:-35px;
+    z-index:11;
+    width:23%;
+    min-width:200px;
+}
+@media screen and (max-width: 640px){
+    #how .howList .akari .left{
+        bottom:30px;
+        left:-35px;
+        z-index:11;
+    }
+
+}
+
+/* enju
+------------------------------------------------------------------------ */
+
+#how .howList .enju{
+    background:#b7e7bd;
+    border-radius:10px;
+    padding:0;
+}
+@media screen and (max-width: 640px){
+    #how .howList .enju{
+        background:#b7e7bd;
+        border-radius:10px;
+        padding:0px 0 0px 0;
+    }
+
+}
+
+#how .howList .enju .no{
+    top:10px;
+    right:30px;
+    width:14%;
+}
+@media screen and (max-width: 640px){
+    #how .howList .enju .no{
+        width:100%;
+        text-align: right;
+        right:20px;
+    }
+    #how .howList .enju .no img{
+        width:16%;
+        right:4%;
+        left:auto;
+    }
+}
+
+#how .howList .enju .subCap{
+    width:73%;
+    z-index:11;
+    padding:2em 0 2em 20%;
+}
+@media screen and (min-width: 640px) and (max-width: 740px){
+    #how .howList .enju .subCap{
+        padding:2em 0 2em 25%;
+    }
+}
+@media screen and (max-width: 640px){
+    #how .howList .enju .subCap{
+        top:1.6em;
+        right:4%;
+        left:auto;
+        width:62%;
+        z-index:11;
+        padding:1em 0 3em 35%;
+    }
+}
+
+#how .howList .enju .stamp img{
+    position:absolute;
+    top:10px;
+    z-index:8;
+    left:-80px;
+}
+@media screen and (max-width: 640px){
+    #how .howList .enju .stamp img{
+        position:absolute;
+        top:10px;
+        z-index:8;
+        left:-80px;
+    }
+}
+
+#how .howList .enju .subCap span{
+    color:#3c8646;
+}
+@media screen and (max-width: 640px){
+    #how .howList .enju .subCap span{
+        color:#3c8646;
+    }
+}
+
+#how .howList .enju .img{
+    background:#6faa77;
+    padding:3% 0px;
+    text-align:center;
+}
+@media screen and (max-width: 640px){
+    #how .howList .enju .img{
+        background:#6faa77;
+        padding:30px 0 30px 60px;
+        text-align:center;
+        margin-top:0;
+    }
+}
+
+#how .howList .enju .img img{
+    position:relative;
+    z-index:10;
+}
+    @media screen and (max-width: 640px){
+        #how .howList .enju .img img{
+            position:relative;
+            z-index:10;
+            width:85%;
+        }
+    }
+
+#how .howList .enju .right{
+    right:-40px;
+    bottom:25px;
+    z-index:11;
+    width:21%;
+    min-width:170px;
+}
+    @media screen and (max-width: 640px){
+        #how .howList .enju .right{
+            right:-65px;
+            bottom:25px;
+            z-index:11;
+        }
+    }
+#how .howList .enju .left{
+    top:-70px;
+    left:-50px;
+    z-index:9;
+    width:24%;
+    min-width:190px;
+}
+    @media screen and (max-width: 640px){
+        #how .howList .enju .left{
+            top:-13%;
+            left:-20px;
+            z-index:9;
+            width:100%;
+			text-align:left;
+            min-width:auto;
+        }
+        #how .howList .enju .left img{
+			width:35%;
+		}
+    }
+
+
+/* ricka
+------------------------------------------------------------------------ */
+
+#how .howList .ricka{
+    background:#bce8e9;
+    border-radius:10px;
+    padding:0 0 40px;
+}
+@media screen and (max-width: 640px){
+    #how .howList .ricka{
+        background:#bce8e9;
+        border-radius:10px;
+        padding:0;
+    }
+}
+
+#how .howList .ricka .no{
+    top:10px;
+    left:10px;
+    width:14%;
+}
+@media screen and (max-width: 640px){
+    #how .howList .ricka .no{
+        width:15%;
+        left:4%;
+    }
+}
+
+#how .howList .ricka .subCap{
+
+    width:72%;
+    z-index:11;
+    padding:2em 0 2em 15% ;
+}
+@media screen and (max-width: 640px){
+    #how .howList .ricka .subCap{
+
+        width:65%;
+        z-index:11;
+        padding:3em 0 1.5em 6%;
+    }
+}
+#how .howList .ricka .stamp img{
+    position:absolute;
+    top:10px;
+    z-index:8;
+    right:0px;
+}
+@media screen and (max-width: 640px){
+    #how .howList .ricka .stamp img{
+        position:absolute;
+        top:-40px;
+        z-index:8;
+        right:-50px;
+    }
+}
+#how .howList .ricka .subCap span{
+    color:#0a878a;
+}
+@media screen and (max-width: 640px){
+    #how .howList .ricka .subCap span{
+        color:#0a878a;
+    }
+}
+#how .howList .ricka .img{
+    padding:0;
+    text-align:center;
+}
+@media screen and (max-width: 640px){
+    #how .howList .ricka .img{
+        padding:0;
+        text-align:center;
+        margin-top:0;
+    }
+}
+#how .howList .ricka .img img{
+    position:relative;
+    z-index:9;
+    width:100% !important;
+}
+@media screen and (max-width: 640px){
+    #how .howList .ricka .img img{
+        position:relative;
+        z-index:9;
+        width:100%;
+        vertical-align: bottom;
+    }
+}
+#how .howList .ricka .right{
+    right:-75px;
+    top:-65px;
+    z-index:10;
+    width:22%;
+    min-width:180px;
+}
+@media screen and (max-width: 640px){
+    #how .howList .ricka .right{
+        right:-5%;
+        top:-14%;
+        z-index:9;
+        width:100%;
+		text-align:right;
+        min-width:auto;
+    }
+    #how .howList .ricka .right img{
+		width:30%;
+	}
+}
+#how .howList .ricka .left{
+    bottom:10px;
+    left:-35px;
+    z-index:10;
+    width:17%;
+    min-width:150px;
+}
+@media screen and (max-width: 640px){
+    #how .howList .ricka .left{
+        bottom:30px;
+        left:-35px;
+        z-index:11;
+    }
+}
+
+
+
+/* myu
+------------------------------------------------------------------------ */
+
+#how .howList .myu{
+    background:#fdf7ce;
+    border-radius:10px;
+    padding:0;
+}
+@media screen and (max-width: 640px){
+    #how .howList .myu{
+        background:#fdf7ce;
+        border-radius:10px;
+        padding:0;
+    }
+}
+#how .howList .myu .no{
+    z-index:10;
+    top:10px;
+    right:30px;
+    width:14%;
+}
+@media screen and (max-width: 640px){
+    #how .howList .myu .no{
+        width:100%;
+        text-align: right;
+        right:20px;
+    }
+    #how .howList .myu .no img{
+        width:14%;
+    }
+}
+#how .howList .myu .subCap{
+
+    width:64%;
+    z-index:11;
+    padding:2em 0 2em 20%;
+}
+@media screen and (max-width: 640px){
+    #how .howList .myu .subCap{
+
+        width:62%;
+        z-index:11;
+        padding:2.5em 0 1.5em 35%;
+    }
+}
+#how .howList .myu .subCap span{
+    color:#fe5400;
+}
+@media screen and (max-width: 640px){
+    #how .howList .myu .subCap span{
+        color:#fe5400;
+    }
+}
+#how .howList .myu .img{
+    background:#ffd97d;
+    padding:30px 120px 30px 0;
+    text-align:center;
+}
+@media screen and (max-width: 640px){
+    #how .howList .myu .img{
+        background:#ffd97d;
+        padding:1.5em 0.8em;
+        text-align:right;
+        margin-top:0;
+    }
+}
+#how .howList .myu .img img{
+    position:relative;
+    z-index:10;
+}
+@media screen and (max-width: 640px){
+    #how .howList .myu .img img{
+        position:relative;
+        z-index:10;
+        width:75%;
+    }
+}
+#how .howList .myu .right{
+    right: -20px;
+    bottom: 10px;
+    z-index: 9;
+    width: 35%;
+    min-width: 230px;
+
+}
+@media screen and (max-width: 640px){
+    #how .howList .myu .right{
+        right:-15px;
+        top:-20px;
+        z-index:9;
+        width:30%;
+        min-width:auto;
+    }
+}
+#how .howList .myu .left{
+    top:-40px;
+    left:-20px;
+    z-index:11;
+    width:17%;
+    min-width:140px;
+}
+@media screen and (max-width: 640px){
+    #how .howList .myu .left{
+        bottom:30px;
+        left:5px;
+        z-index:11;
+        width:100%;
+		text-align:left;
+        min-width:auto;
+    }
+    #how .howList .myu .left img{
+		width:24%;
+	}
+}
+
+
+
+/* tengge
+------------------------------------------------------------------------ */
+
+#how .howList .tengge{
+    background:#eedaef;
+    border-radius:10px;
+    height:auto;
+    position:relative;
+    padding:0 !important;
+}
+@media screen and (max-width: 640px){
+    #how .howList .tengge{
+        background:#eedaef;
+        border-radius:10px;
+        padding : 0px 0 5% 0px !important;
+        height:auto;
+    }
+}
+#how .howList .tengge .no{
+    top:10px;
+    left:10px;
+    z-index:10;
+    width:14%;
+}
+@media screen and (max-width: 640px){
+    #how .howList .tengge .no{
+        width:17%;
+        left:4%;
+    }
+}
+
+#how .howList .tengge .subCap{
+    z-index:11;
+    width:74%;
+    padding:3em 0 0em 15%;
+}
+@media screen and (max-width: 640px){
+    #how .howList .tengge .subCap{
+        width:70%;
+        z-index:11;
+        padding:3em 0 0em 6%;
+    }
+}
+#how .howList .tengge .stamp img{
+    position:absolute;
+    top:-10px;
+    z-index:8;
+    right:0px;
+}
+@media screen and (max-width: 640px){
+    #how .howList .tengge .stamp img{
+        position:absolute;
+        top:-10px;
+        z-index:8;
+        right:0px;
+    }
+}
+
+#how .howList .tengge .subCap span{
+    color:#8e16bb;
+}
+@media screen and (max-width: 640px){
+    #how .howList .tengge .subCap span{
+        color:#8e16bb;
+    }
+}
+#how .howList .tengge .img{
+    position:relative;
+    width:100%;
+    left:0px;
+    z-index:9;
+    bottom:45px;
+    padding-top:-5%;
+}
+@media screen and (max-width: 640px){
+    #how .howList .tengge .img{
+        text-align:center;
+        margin-top:0;
+        width:100%;
+        position:relative;
+        left:0;
+        bottom:0;
+        padding:0;
+    }
+}
+#how .howList .tengge .right{
+    right:-120px;
+    top:-45px;
+    z-index:10;
+    width:23%;
+    min-width:210px;
+}
+@media screen and (max-width: 640px){
+    #how .howList .tengge .right{
+        right:-13%;
+        top:-20px;
+        z-index:9;
+        width:100%;
+		text-align:right;
+        min-width:auto;
+    }
+    #how .howList .tengge .right img{
+		width:38%;
+	}
+}
+
+#how .howList .tengge .left{
+    bottom:10px;
+    left:-35px;
+}
+@media screen and (max-width: 640px){
+    #how .howList .tengge .left{
+        bottom:30px;
+        left:-35px;
+        z-index:11;
+    }
+}
+
+
+

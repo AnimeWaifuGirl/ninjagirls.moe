@@ -1,0 +1,2472 @@
+@charset "utf-8";
+/* CSS Document */
+/* index.css */
+/****************************************************************************************
+
+   トップページ
+
+****************************************************************************************/
+
+
+
+/*----------------------------------
+
+   ページ内共通
+
+----------------------------------*/
+
+.wrapper{
+   padding:0;
+}
+span{
+   color:#ff0645;
+}
+
+
+
+/*----------------------------------
+
+   メインビジュアル
+
+----------------------------------*/
+
+
+
+/*------ さくら ------*/
+
+
+#sakura{
+   position:absolute;
+   top:0;
+   left:0;
+   width:100%!important;
+}
+.sakura_petal li{
+   position:absolute;
+   z-index:1;
+}
+.sakura_petal li:nth-child(1){
+   top:0;
+   left:-4%;
+   z-index:10;
+   width:15%;
+}
+.sakura_petal li:nth-child(2){
+   top:12%;
+   left:14%;
+   width:6%;
+}
+.sakura_petal li:nth-child(3){
+   top:40%;
+   left:4%;
+   width:8%;
+}
+.sakura_petal li:nth-child(4){
+   top:-2%;
+   left:0px;
+   right:0;
+   margin:0 auto;
+   width:3%;
+   z-index:10;
+}
+.sakura_petal li:nth-child(5){
+   top:14%;
+   left:0px;
+   right:0;
+   margin:0 auto;
+   width:3%;
+   z-index:10;
+}
+.sakura_petal li:nth-child(6){
+   top:15%;
+   right:4%;
+   width:4%;
+}
+.sakura_petal li:nth-child(7){
+   top:25%;
+   right:-2%;
+   z-index:10;
+   width:10%;
+}
+
+
+/*------ メインビジュアル ------*/
+
+.main{
+   width:100%;
+   height:auto;
+   background:url(../images/top/main_bg.jpg) repeat;
+   /*--overflow:hidden;--*/
+   position:relative;
+}
+h1{
+   width:35%;
+   top:12px;
+   right:0;
+   position:absolute;
+   z-index:10;
+}
+.catchcopy{
+   width:54.9%;
+   bottom:20%;
+   right:40px;
+   position:absolute;
+   z-index:10;
+}
+.pv{
+   width:41.5%;
+   bottom:8%;
+   left:0;
+   position:absolute;
+   z-index:22;
+}
+
+
+/*------ キャラクター ------*/
+
+
+.main .bg li{
+   position:absolute;
+   z-index:9;
+   width:100%;
+}
+.main .bg li:nth-child(1){/* akari */
+   z-index:9;
+   left:-43.75%;
+   top:50%;
+   position:relative;
+ animation:character01 1.2s 1 forwards;
+ -webkit-animation:character01 1.2s 1 forwards;
+ -moz-animation:character01 1.2s 1 forwards;
+ opacity:0;
+}
+.main .bg li:nth-child(1) img{
+   width:98%;
+}
+.main .bg li:nth-child(2){/* enju */
+   z-index:8;
+   right:-20.8%;
+   bottom:0;
+ animation:character02 0.8s 0.4s 1 forwards;
+ -webkit-animation:character02 0.8s 0.4s 1 forwards;
+ -moz-animation:character02 0.8s 0.4s 1 forwards;
+ opacity:0;
+}
+.main .bg li:nth-child(2) img{
+   width:85%;
+}
+.main .bg li:nth-child(3){/* ricka */
+   z-index:7;
+   right:-62%;
+   top:7%;
+ animation:character03 0.8s 1.2s 1 forwards;
+ -webkit-animation:character03 0.8s 1.2s 1 forwards;
+ -moz-animation:character03 0.8s 1.2s 1 forwards;
+ opacity:0;
+}
+.main .bg li:nth-child(3) img{
+   width:58%;
+}
+.main .bg li:nth-child(4){/* myu */
+   z-index:6;
+   left:27.5%;
+   top:2%;
+ animation:character04 0.8s 0.6s 1 forwards;
+ -webkit-animation:character04 0.8s 0.6s 1 forwards;
+ -moz-animation:character04 0.8s 0.6s 1 forwards;
+ opacity:0;
+}
+.main .bg li:nth-child(4) img{
+   width:40%;
+}
+.main .bg li:nth-child(5){/* tengge */
+   z-index:5;
+   right:-27%;
+   top:10px;
+ animation:character05 0.8s 0.9s 1 forwards;
+ -webkit-animation:character05 0.8s 0.9s 1 forwards;
+ -moz-animation:character05 0.8s 0.9s 1 forwards;
+ opacity:0;
+}
+.main .bg li:nth-child(5) img{
+   width:45%;
+}
+
+
+/****--------- アニメーション（登場） ---------****/
+
+/* akari */
+@keyframes character01{
+ 0%   { transform:translate(-5%, -5%);  opacity:0;}
+ 40% { opacity:1;}
+ 100% { transform:translate(0%, 0%); opacity:1;}
+}
+@-webkit-keyframes character01{
+ 0%   { -webkit-transform:translate(-5%, -5%);  opacity:0;}
+ 40% { opacity:1;}
+ 100% { -webkit-transform:translate(0%, 0%); opacity:1;}
+}
+@-moz-keyframes character01{
+ 0%   { -moz-transform:translate(-5%, -5%);  opacity:0;}
+ 40% { opacity:1;}
+ 100% { -moz-transform:translate(0%, 0%); opacity:1;}
+}
+
+/* enju */
+@keyframes character02{
+ 0%   { transform:translate(-4%, 2%);  opacity:0;}
+ 70% { opacity:1;}
+ 100% { transform:translate(0%, 0%); opacity:1;}
+}
+@-webkit-keyframes character02{
+ 0%   { -webkit-transform:translate(-4%, 2%);  opacity:0;}
+ 70% { opacity:1;}
+ 100% { -webkit-transform:translate(0%, 0%); opacity:1;}
+}
+@-moz-keyframes character02{
+ 0%   { -moz-transform:translate(-4%, 2%);  opacity:0;}
+ 70% { opacity:1;}
+ 100% { -moz-transform:translate(0%, 0%); opacity:1;}
+}
+
+/* ricka */
+@keyframes character03{
+ 0%   { transform:translate(3%, 4%);  opacity:0;}
+ 60% { opacity:1;}
+ 100% { transform:translate(0%, 0%); opacity:1;}
+}
+@-webkit-keyframes character03{
+ 0%   { -webkit-transform:translate(3%, 4%);  opacity:0;}
+ 60% { opacity:1;}
+ 100% { -webkit-transform:translate(0%, 0%); opacity:1;}
+}
+@-moz-keyframes character03{
+ 0%   { -moz-transform:translate(3%, 4%);  opacity:0;}
+ 60% { opacity:1;}
+ 100% { -moz-transform:translate(0%, 0%); opacity:1;}
+}
+
+/* myu */
+@keyframes character04{
+ 0%   { transform:translate(0%, 4%);  opacity:0;}
+ 60% { opacity:1;}
+ 100% { transform:translate(0%, 0%); opacity:1;}
+}
+@-webkit-keyframes character04{
+ 0%   { -webkit-transform:translate(0%, 4%);  opacity:0;}
+ 60% { opacity:1;}
+ 100% { -webkit-transform:translate(0%, 0%); opacity:1;}
+}
+@-moz-keyframes character04{
+ 0%   { -moz-transform:translate(0%, 4%);  opacity:0;}
+ 60% { opacity:1;}
+ 100% { -moz-transform:translate(0%, 0%); opacity:1;}
+}
+
+
+/* tengge */
+@keyframes character05{
+ 0%   { transform:translate(0%, 3%);  opacity:0;}
+ 70% { opacity:1;}
+ 100% { transform:translate(0%, 0%); opacity:1;}
+}
+@-webkit-keyframes character05{
+ 0%   { -webkit-transform:translate0%, 3%);  opacity:0;}
+ 70% { opacity:1;}
+ 100% { -webkit-transform:translate(0%, 0%); opacity:1;}
+}
+@-moz-keyframes character05{
+ 0%   { -moz-transform:translate(0%, 3%);  opacity:0;}
+ 70% { opacity:1;}
+ 100% { -moz-transform:translate(0%, 0%); opacity:1;}
+}
+
+
+
+/*------ メニュー ------*/
+
+
+.indexNav{
+   height:45px;
+   width:100%;
+   background:url(../images/top/menu_hr.png) no-repeat center top,url(../images/top/menu_hr.png) no-repeat center bottom,rgba(0,0,0,0.8);
+   position:absolute;
+   z-index:21;
+   bottom:13%;
+}
+.indexNav ul{
+   letter-spacing: -.40em;/* inline-blockの隙間防止 */
+   margin:0 auto;
+   text-align:right;
+   width:100%;
+   max-width:1200px;
+}
+.indexNav ul li{
+   letter-spacing: normal;/* inline-blockの隙間防止 */
+   width:13%;
+   max-width:160px;
+   border-left:1px solid #646464;
+   height:41px;
+   display:inline-block;
+   text-align:center;
+   cursor:pointer;
+   margin:2px 0 0 0;
+   position: relative;
+}
+.indexNav ul li a{
+   width:100%;
+   display:block;
+   padding:8% 0;
+   height:100%;
+}
+.indexNav ul li img{
+   width:80%;
+}
+.indexNav ul li:last-child{
+   margin:0 3% 0 0;
+   border-right:1px solid #646464;
+}
+.indexNav ul li>ul{
+  display: block;
+  clear: both;
+  position: absolute;
+  left: -1px;
+  top: 43px;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  height: 0;
+  overflow: hidden;
+}
+.indexNav ul li>ul>li{
+  display: block;
+  width: 100%;
+  clear: both;
+  background: rgba(0,0,0,0.8);
+  border-right: 1px solid #646464;
+  border-bottom: 1px solid #646464;
+  margin-top: 0;
+}
+.indexNav ul li>ul>li>a{
+  padding: 8% 0 !important;
+}
+.indexNav ul li:hover{
+   background:#e50a82;
+}
+.indexNav ul li a label#sub{
+  display: block;
+  padding: 8% 0;
+  cursor: pointer;
+}
+input#support,
+input#support_sp{
+  display: none;
+}
+
+input#support:checked ~ .main .indexNav.pc ul li>ul {
+  height: 168px;
+}
+
+
+/*----------------------------------
+
+   事前登録キャンペーン
+
+----------------------------------*/
+
+
+.preBox{
+   position:relative;
+}
+.pre{
+   font-family: 'Acme', sans-serif;
+   width:100%;
+   background:url(../images/top/sankaku_bg.png) repeat-x center 90%,url(../images/top/notepad_pattern.jpg) repeat;
+   position:relative;
+   z-index:20;
+}
+.pre:before{
+   content:"";
+   background:url(../images/top/notepad_holes.png) repeat-x;
+   height:33px;
+   width:100%;
+   display:block;
+   position:absolute;
+   top:-33px;
+}
+.pre:after{
+   content:"";
+   background:url(../images/top/notepad_bottom.png) repeat-x;
+   height:13px;
+   width:100%;
+   display:block;
+   position:absolute;
+   bottom:-13px;
+}
+
+
+/*------ 詳細 ------*/
+
+.pre .details{
+   width:55%;
+   position:relative;
+   text-align:center;
+   display:inline-block;
+   top:0;
+   left:0%;
+   vertical-align:top;
+   padding:0 0 3%;
+}
+.pre .details h2{
+   width:68.5%;
+   margin:4% auto 3%;
+}
+.pre .details p{
+   margin:0 0 4%;
+   font-size:200%;
+}
+.pre .details p span{
+   font-size:110%;
+   color:#ff0645;
+}
+.pre .details .btn li{
+   width:45%;
+   display:inline-block;
+   cursor:pointer;
+   margin:0 2% 0;
+}
+.pre .details .btn li:nth-child(3),
+.pre .details .btn li:nth-child(4){
+   display:none;
+}
+
+/*------ オブジェクト ------*/
+
+
+.pre .obj{
+   width:40%;
+   position:relative;
+   display:inline-block;
+   top:0;
+   right:0;
+}
+.pre .obj li{
+   position:absolute;
+}
+.pre .obj li:nth-child(1){/* フキダシ */
+   top:-60px;
+   right:40%;
+   background:none;
+   z-index:11;
+   width:65%;
+}
+.pre .obj li:nth-child(2){/* akari */
+   top:120px;
+   left:0;
+   z-index:10;
+   animation:jump 5s infinite;
+   -webkit-animation:jump 5s infinite;
+   -moz-animation:jump 5s infinite;
+   width:30%;
+}
+.pre .obj li:nth-child(3){/* enju */
+   top:130px;
+   left:30%;
+   z-index:9;
+   animation:jump 6s 1s infinite;
+   -webkit-animation:jump 6s 1s infinite;
+   -moz-animation:jump 6s 1s infinite;
+   width:27%;
+}
+.pre .obj li:nth-child(4){/* ricka */
+   top:140px;
+   right:15%;
+   z-index:9;
+   animation:jump 5s 3s infinite;
+   -webkit-animation:jump 5s 3s infinite;
+   -moz-animation:jump 5s 3s infinite;
+   width:22%;
+}
+.pre .obj li:nth-child(5){/* myu */
+   top:60px;
+   right:25%;
+   z-index:8;
+   animation:jump 6.5s 1.6s infinite;
+   -webkit-animation:jump 6.5s 1.6s infinite;
+   -moz-animation:jump 6.5s 1.6s infinite;
+   width:27%;
+}
+.pre .obj li:nth-child(6){/* tengge */
+   top:70px;
+   left:18%;
+   z-index:8;
+   animation:jump 5s 2s infinite;
+   -webkit-animation:jump 5s 2s infinite;
+   -moz-animation:jump 5s 2s infinite;
+   width:27%;
+}
+
+
+/*----------------------------------
+
+   ダウンロード
+
+----------------------------------*/
+
+
+.downloadBox{
+   position:relative;
+}
+.download{
+   font-family: 'Acme', sans-serif;
+   width:100%;
+   background:url(../images/top/sankaku_bg.png) repeat-x center 90%,url(../images/top/notepad_pattern.jpg) repeat;
+   position:relative;
+   z-index:20;
+}
+.download:before{
+   content:"";
+   background:url(../images/top/notepad_holes.png) repeat-x;
+   height:33px;
+   width:100%;
+   display:block;
+   position:absolute;
+   top:-33px;
+}
+.download:after{
+   content:"";
+   background:url(../images/top/notepad_bottom.png) repeat-x;
+   height:13px;
+   width:100%;
+   display:block;
+   position:absolute;
+   bottom:-13px;
+}
+
+
+/*------ 詳細 ------*/
+
+.download .details{
+   width:55%;
+   position:relative;
+   text-align:center;
+   display:inline-block;
+   top:0;
+   left:0%;
+   vertical-align:top;
+   padding:0 0 3%;
+}
+.download .details h2{
+   width:68.5%;
+   margin:4% auto 3%;
+}
+.download .details p{
+   margin:0 0 4%;
+   font-size:200%;
+}
+.download .details p span{
+   font-size:110%;
+   color:#ff0645;
+}
+.download .details .btn li{
+   width:40%;
+   display:inline-block;
+   cursor:pointer;
+   margin:0 2% 2% 0;
+}
+
+/*------ オブジェクト ------*/
+
+
+.download .obj{
+    width:40%;
+    position:relative;
+    display:inline-block;
+    top:0;
+    right:0;
+}
+.download .obj li{
+    position:absolute;
+}
+.download .obj li:nth-child(1){/* akari */
+    top: 90px;
+    left:0;
+    z-index:10;
+    animation:jump 5s infinite;
+    -webkit-animation:jump 5s infinite;
+    -moz-animation:jump 5s infinite;
+    width:30%;
+}
+.download .obj li:nth-child(2){/* enju */
+    top: 100px;
+    left:30%;
+    z-index:9;
+    animation:jump 6s 1s infinite;
+    -webkit-animation:jump 6s 1s infinite;
+    -moz-animation:jump 6s 1s infinite;
+    width:27%;
+}
+.download .obj li:nth-child(3){/* ricka */
+    top: 110px;
+    right:15%;
+    z-index:9;
+    animation:jump 5s 3s infinite;
+    -webkit-animation:jump 5s 3s infinite;
+    -moz-animation:jump 5s 3s infinite;
+    width:22%;
+}
+.download .obj li:nth-child(4){/* myu */
+    top: 0;
+    right:25%;
+    z-index:8;
+    animation:jump 6.5s 1.6s infinite;
+    -webkit-animation:jump 6.5s 1.6s infinite;
+    -moz-animation:jump 6.5s 1.6s infinite;
+    width:27%;
+}
+.download .obj li:nth-child(5){/* tengge */
+    top: 0;
+    left:18%;
+    z-index:8;
+    animation:jump 5s 2s infinite;
+    -webkit-animation:jump 5s 2s infinite;
+    -moz-animation:jump 5s 2s infinite;
+    width:27%;
+}
+
+
+
+/****--------- アニメーション（ジャンプ） ---------****/
+
+
+@keyframes jump{
+   0%{-webkit-transform:translate(0,0px);transform:translate(0,0px);}
+   3%{-webkit-transform:translate(0,-20px);transform:translate(0,-20px);}
+   5%{-webkit-transform:translate(0,0px);transform:translate(0,0px);}
+   6%{-webkit-transform:translate(0,-5px);transform:translate(0,-5px);}
+   7%{-webkit-transform:translate(0,0px);transform:translate(0,0px);}
+   100%{-webkit-transform:translate(0,0px);transform:translate(0,0px);}
+}
+@-webkit-keyframes jump{
+   0%{-webkit-transform:translate(0,0px);}
+   3%{-webkit-transform:translate(0,-20px);}
+   5%{-webkit-transform:translate(0,0px);}
+   6%{-webkit-transform:translate(0,-5px);}
+   7%{-webkit-transform:translate(0,0px);}
+   100%{-webkit-transform:translate(0,0px);}
+}
+
+
+
+
+/*----------------------------------
+
+   ストーリー
+
+----------------------------------*/
+
+
+.story{
+   width:100%;
+   max-height:600px;
+   background:url(../images/top/story_bg_cercle.png) no-repeat center 150px,url(../images/top/story_bg_pattern.png) repeat, -webkit-linear-gradient(45deg, #c57fbc 0%, #ff6b95 100%);
+   background:url(../images/top/story_bg_cercle.png) no-repeat center 150px,url(../images/top/story_bg_pattern.png) repeat, linear-gradient(45deg, #c57fbc 0%, #ff6b95 100%);
+   text-align:center;
+   overflow:hidden;
+   padding:0 0 6%;
+}
+.story h2{
+   width:51%;
+   position:relative;
+   margin:30px auto 30px;
+   z-index:15;
+   padding:60px 0 0 0;
+}
+.story p{
+   width:42.5%;
+   position:relative;
+   z-index:15;
+   background:rgba(255,255,255,0.8);
+   margin:0 auto;
+   font-size:140%;
+   border-radius:10px;
+   padding:45px;
+   text-align:left;
+}
+
+
+/*------ オブジェクト ------*/
+
+
+.story .obj li{
+   position:absolute;
+   z-index:10;
+}
+.story .obj li:nth-child(1){/* enju */
+   top:-50px;
+   left:-160px;
+   visibility: hidden;
+}
+.story .obj li:nth-child(2){/* akari */
+   top:-60px;
+   right:-40px;
+   visibility: hidden;
+}
+.story .obj li:nth-child(3){/* cloud1 */
+   top:50px;
+   left:-200px;
+ animation:cloud ease-in-out 4s infinite alternate;
+ -webkit-animation:cloud ease-in-out 4s infinite alternate;
+ -moz-animation:cloud ease-in-out 4s infinite alternate;
+}
+.story .obj li:nth-child(4){/* cloud2 */
+   top:160px;
+   left:-110px;
+ animation:cloud ease-in-out 5s infinite alternate;
+ -webkit-animation:cloud ease-in-out 5s infinite alternate;
+ -moz-animation:cloud ease-in-out 5s infinite alternate;
+}
+.story .obj li:nth-child(5){/* cloud3 */
+   top:320px;
+   left:-180px;
+ animation:cloud ease-in-out 7s infinite alternate-reverse;
+ -webkit-animation:cloud ease-in-out 7s infinite alternate-reverse;
+ -moz-animation:cloud ease-in-out 7s infinite alternate-reverse;
+}
+.story .obj li:nth-child(6){/* cloud4 */
+   top:80px;
+   right:-180px;
+ animation:cloud ease-in-out 3s infinite alternate;
+ -webkit-animation:cloud ease-in-out 3s infinite alternate;
+ -moz-animation:cloud ease-in-out 3s infinite alternate;
+}
+.story .obj li:nth-child(7){/* cloud5 */
+   top:200px;
+   right:-130px;
+ animation:cloud ease-in-out 3s infinite alternate;
+ -webkit-animation:cloud ease-in-out 3s infinite alternate;
+ -moz-animation:cloud ease-in-out 3s infinite alternate;
+}
+.story .obj li:nth-child(8){/* cloud6 */
+   top:420px;
+   right:-180px;
+ animation:cloud ease-in-out 3s infinite alternate-reverse;
+ -webkit-animation:cloud ease-in-out 3s infinite alternate-reverse;
+ -moz-animation:cloud ease-in-out 3s infinite alternate-reverse;
+}
+.story .btn{
+   margin:40px auto 0;
+   cursor:pointer;
+   width: 23%;
+   position: relative;
+   z-index: 30;
+}
+/*.story .btn a{
+ overflow: hidden;
+   display: block;
+   width: 100%;
+   max-width: 268px;
+   background: url(../images/common/btn_tellmemore_on.png) no-repeat;
+   background-size: 100%;
+   box-sizing: border-box;
+   margin: 0 auto;
+}
+*/
+
+/*************************************************
+
+ 雲のアニメーション
+
+*************************************************/
+
+
+@keyframes cloud{
+ 0%   { transform:translate(0%, 0%);  opacity:1;}
+ 100% { transform:translate(-30px, 0%); opacity:0;}
+}
+@-webkit-keyframes cloud{
+ 0%   { -webkit-transform:translate(0%, 0%);  opacity:1;}
+ 100% { -webkit-transform:translate(-30px, 0%); opacity:0;}
+}
+@-moz-keyframes cloud{
+ 0%   { -moz-transform:translate(0%, 0%);  opacity:1;}
+ 100% { -moz-transform:translate(-30px, 0%); opacity:0;}
+}
+
+
+
+
+/****--------- アニメーション（登場） ---------****/
+
+
+.leftup{/* enju */
+   -webkit-animation:leftup 0.8s forwards;
+   animation:leftup 0.8s forwards;
+   visibility: hidden;
+}
+@-webkit-keyframes leftup {
+ from {
+   -webkit-transform: translate3d(30%, 100%, 0);
+   transform: translate3d(30%, 100%, 0);
+   visibility: visible;
+ }
+ to {
+   -webkit-transform: translate3d(0, 0, 0);
+   transform: translate3d(0, 0, 0);
+   visibility: visible;
+ }
+}
+@keyframes leftup {
+ from {
+   -webkit-transform: translate3d(30%, 100%, 0);
+   transform: translate3d(30%, 100%, 0);
+   visibility: visible;
+ }
+ to {
+   -webkit-transform: translate3d(0, 0, 0);
+   transform: translate3d(0, 0, 0);
+   visibility: visible;
+ }
+}
+.rightup{/* akari */
+   -webkit-animation:rightup 0.8s forwards;
+   animation:rightup 0.8s forwards;
+   visibility: hidden;
+}
+@-webkit-keyframes rightup {
+ from {
+   -webkit-transform: translate3d(30%, -100%, 0);
+   transform: translate3d(30%, -100%, 0);
+   visibility: visible;
+ }
+ to {
+   -webkit-transform: translate3d(0, 0, 0);
+   transform: translate3d(0, 0, 0);
+   visibility: visible;
+ }
+}
+@keyframes rightup {
+ from {
+   -webkit-transform: translate3d(30%, -100%, 0);
+   transform: translate3d(30%, -100%, 0);
+   visibility: visible;
+ }
+ to {
+   -webkit-transform: translate3d(0, 0, 0);
+   transform: translate3d(0, 0, 0);
+   visibility: visible;
+ }
+}
+
+
+/*----------------------------------
+
+   遊び方
+
+----------------------------------*/
+
+
+.howBox{
+   width:100%;
+   position:relative;
+   background:url(../images/top/how_star.png) no-repeat center,url(../images/top/how_bg.png) repeat;
+   box-shadow:0px -1px 6px -1px rgba(0, 0, 0, 0.5);
+}
+.how{
+   width:100%;
+   max-height:570px;
+
+   position:relative;
+}
+.how h2{
+   width:50%;
+   position:absolute;
+   top:-10%;
+   left:8.3%;
+   z-index:32;
+}
+
+.how .imgs{
+ position: relative;
+ z-index:33;
+}
+
+/*------ 詳細 ------*/
+
+.how .details{
+   position:relative;
+   text-align:left;
+   background:rgba(255,255,255,0.8);
+   padding:90px 0 60px 50px;
+   border-radius:10px;
+   width:80%;
+   margin:0 0 0 1%;
+}
+.how .details p{
+   margin:0 0 3%;
+   position:relative;
+   z-index:33;
+   width:50%;
+   font-size:140%;
+}
+.how .details .img,
+.how .details .btn{
+   display:inline-block;
+}
+.how .details .img{
+   margin:0 30px 0 0;
+   width:40%;
+}
+.how .details .btn{
+   position:relative;
+   z-index:33;
+   width:28%;
+}
+
+/*------ オブジェクト ------*/
+
+.how .obj{
+   position:absolute;
+   bottom:0%;
+   right:0%;
+   z-index:20;
+   text-align:right;
+}
+.how .obj .contents{
+   position:absolute;
+}
+.charaBox{
+   height:100%;
+   position: relative;
+   width:100%;
+   max-width:1200px;
+   margin: 0 auto;
+   padding:8% 0;
+
+
+}
+.charaBox .illust{
+   position:absolute;
+   bottom:0;
+   right:-10%;
+   z-index: 10;
+   width:70%;
+   max-width: 800px;
+
+}
+
+
+/*----------------------------------
+
+   キャラクター
+
+----------------------------------*/
+
+
+.chara{
+   width:100%;
+   background:no-repeat,url(../images/top/chara_bg.jpg) repeat;
+   padding:5% 0;
+   text-align:center;
+   overflow:hidden;
+   box-shadow:0px -1px 6px -1px rgba(0, 0, 0, 0.3);
+}
+.chara h2{
+   position:relative;
+   width:50%;
+   margin:0 auto;
+   z-index:30;
+}
+.chara .member{
+   position:relative;
+   z-index:30;
+   overflow:hidden;
+   margin:60px 0 0 0;
+   letter-spacing: -.40em;/* inline-blockの隙間防止 */
+}
+.chara .member li{
+   display:inline-block;
+   margin:0 15px 25px 0;
+   letter-spacing:nomal;/* inline-blockの隙間防止 */
+}
+.chara .bg{
+   clear:both;
+}
+.chara .bg li{
+   position:absolute;
+   z-index:25;
+}
+.chara .bg li:nth-child(1){
+   top:-390px;
+   left:290px;
+}
+.chara .bg li:nth-child(2){
+   bottom:-540px;
+   left:-50px;
+}
+.chara .bg li:nth-child(3){
+   bottom:-480px;
+   right:0px;
+}
+.chara .bg li:nth-child(4){
+   bottom:-104px;
+   left:-40px;
+}
+.chara .bg li:nth-child(5){
+   bottom:-123px;
+   right:40px;
+}
+
+
+
+
+
+/*----------------------------------
+
+   news
+
+----------------------------------*/
+
+.news{
+   width:100%;
+   background:url(../images/top/news_bg.png) repeat-x center 300px,#FF9AB0;
+   text-align:center;
+   padding:0 0 40px;
+   box-shadow:0px -1px 6px -1px rgba(0, 0, 0, 0.5);
+}
+.news h2{
+   position:relative;
+   z-index:30;
+   width:50%;
+   padding:40px 0 0 0;
+   margin:0 auto 0;
+}
+
+
+/*------ オブジェクト ------*/
+
+
+.news .obj li{
+   z-index:29;
+   position:absolute;
+}
+.news .obj li:nth-child(1){
+   left:-40px;
+   top:-10px;
+   width:28%;
+}
+.news .obj li:nth-child(2){
+   right:40px;
+   top:-20px;
+   width:22%;
+}
+.news .obj li:nth-child(3){
+   left:-135px;
+   top:30px;
+   width:18%;
+}
+.news .obj li:nth-child(4){
+   right:-135px;
+   top:30px;
+   width:18%;
+}
+
+
+/*------ sns ------*/
+
+.news .snsBox{
+   width:532px;
+   padding:5px 0;
+   text-align:center;
+   background:-webkit-linear-gradient(left, #b39e68 0%, #fef4e2 50%, #b39e68 100%);
+   border-radius:10px;
+   border:solid 1px #000;
+   position:relative;
+   z-index:33;
+   margin:1% 10px;
+   display:inline-block;
+}
+.news .left:after{/* twitter */
+   content:"";
+   background:url(../images/top/news_tw_obj.png) no-repeat;
+   position:absolute;
+   left:-10px;
+   top:-10px;
+   width:80px;
+   height:83px;
+}
+.news .right:after{/* facebook */
+   content:"";
+   background:url(../images/top/news_fb_obj.png) no-repeat;
+   position:absolute;
+   right:-10px;
+   top:-10px;
+   width:80px;
+   height:83px;
+}
+.news .sns{
+   width:500px;
+   margin:0 auto;
+   background:#ff69a1;
+   padding:10px;
+   border-radius:10px;
+   border:solid 1px #000;
+}
+.news .sns .cap{
+   width:78%;
+   margin:10px auto;
+}
+
+
+
+
+
+/*----------------------------------
+
+   事前登録キャンペーン（下部）
+
+----------------------------------*/
+
+
+.preFooterBox{
+   position:relative;
+   z-index:100;
+}
+.preFooter{
+   width:100%;
+   padding:20px 0;
+   background:url(../images/top/sankaku_bg.png) repeat-x center 150px,url(../images/top/notepad_pattern.jpg) repeat;
+   position:absolute;
+   top:0;
+}
+.preFooter:before{
+   content:"";
+   background:url(../images/top/notepad_top.png) repeat-x;
+   height:13px;
+   width:100%;
+   display:block;
+   position:absolute;
+   top:-13px;
+}
+.preFooter:after{
+   content:"";
+   background:url(../images/top/notepad_holes.png) repeat-x;
+   height:33px;
+   width:100%;
+   display:block;
+   position:absolute;
+   bottom:-33px;
+ box-shadow: 3px 3px 3px rgba(0,0,0,0.2);
+}
+
+/*------ 詳細 ------*/
+
+.preFooter .details{
+   text-align:center;
+   vertical-align:top;
+}
+.preFooter .details h2{
+   margin:2% auto 3%;
+   width:35%;
+}
+.preFooter .details p{
+   margin:0 0 20px;
+}
+.preFooter .details .btn li{
+   display:inline-block;
+   cursor:pointer;
+   margin:0 10px 0;
+}
+.preFooter .details .btn li:nth-child(3),
+.preFooter .details .btn li:nth-child(4){
+   display:none;
+}
+.preFooter .details .btn li:nth-child(1),
+.preFooter .details .btn li:nth-child(2){
+   display:inline-block;
+}
+
+/*----------------------------------
+
+   ダウンロード（下部）
+
+----------------------------------*/
+
+
+.downloadFooterBox{
+   position:relative;
+   z-index:100;
+}
+.downloadFooter{
+   width:100%;
+   padding:20px 0;
+   background:url(../images/top/sankaku_bg.png) repeat-x center 150px,url(../images/top/notepad_pattern.jpg) repeat;
+}
+.downloadFooter:before{
+   content:"";
+   background:url(../images/top/notepad_top.png) repeat-x;
+   height:13px;
+   width:100%;
+   display:block;
+   position:absolute;
+   top:-12px;
+}
+.downloadFooter:after{
+   content:"";
+   background:url(../images/top/notepad_holes.png) repeat-x;
+   height:33px;
+   width:100%;
+   display:block;
+   position:absolute;
+   bottom:-33px;
+ box-shadow: 3px 3px 3px rgba(0,0,0,0.2);
+}
+
+/*------ 詳細 ------*/
+
+.downloadFooter .details{
+   text-align:center;
+   vertical-align:top;
+}
+.downloadFooter .details h2{
+   margin:2% auto 3%;
+   width:35%;
+}
+.downloadFooter .details p{
+   margin:0 0 20px;
+}
+.downloadFooter .details .btn li{
+   display:inline-block;
+   cursor:pointer;
+   margin:0 10px 20px;
+}
+.downloadFooter .details .btn li:last-child {
+  margin:0 10px 0;
+}
+
+
+/*----------------------------------
+
+   footer
+
+----------------------------------*/
+
+
+.pagetop{
+   position:absolute;
+   top: 25%;
+   right: 1%;
+   z-index:100;
+}
+footer{
+   padding: 60px 0 30px 0;
+}
+
+
+
+/*----------------------------------------------------------------------------------------------------
+
+   ★共通モーダル
+
+----------------------------------------------------------------------------------------------------*/
+#incindex .btn{
+ box-sizing: border-box;
+}
+#incindex .preBox .pre .contents .details .btn li{
+ width: 40%;
+ float: left;
+ margin: 0 5%;
+}
+#incindex .pre .details{
+ padding: 0;
+}
+#incindex .btn li {
+   display: block !important;
+}
+
+.fb_iframe_widget,
+.fb_iframe_widget span,
+.fb_iframe_widget iframe[style]{
+   width: 100% !important;
+}
+
+/*----------------------------------------------------------------------------------------------------
+
+   ★800px以下の場合
+
+----------------------------------------------------------------------------------------------------*/
+
+
+@media screen and (max-width: 800px){
+
+
+/*----------------------------------
+
+   事前登録キャンペーン
+
+----------------------------------*/
+
+
+.preBox{
+   position:relative;
+}
+.pre{
+   font-family: 'Acme', sans-serif;
+   width:100%;
+   background:url(../images/top/sankaku_bg.png) repeat-x center 90%,url(../images/top/notepad_pattern.jpg) repeat;
+   position:relative;
+   z-index:20;
+}
+.pre:before{
+   content:"";
+   background:url(../images/top/notepad_holes.png) repeat-x;
+   height:33px;
+   width:100%;
+   display:block;
+   position:absolute;
+   top:-33px;
+}
+.pre:after{
+   content:"";
+   background:url(../images/top/notepad_bottom.png) repeat-x;
+   height:13px;
+   width:100%;
+   display:block;
+   position:absolute;
+   bottom:-13px;
+}
+
+
+/*------ 詳細 ------*/
+
+.pre .details{
+   width:55%;
+   position:relative;
+   text-align:center;
+   display:inline-block;
+   top:0;
+   left:0%;
+   vertical-align:top;
+   padding:0 0 3%;
+}
+.pre .details h2{
+   width:68.5%;
+   margin:4% auto 3%;
+}
+.pre .details p{
+   margin:0 0 4%;
+   font-size:200%;
+}
+.pre .details p span{
+   font-size:110%;
+   color:#ff0645;
+}
+.pre .details .btn li{
+   width:45%;
+   display:inline-block;
+   cursor:pointer;
+   margin:0 2% 0;
+}
+.pre .details .btn li:nth-child(3),
+.pre .details .btn li:nth-child(4){
+   display:none;
+}
+
+/*------ オブジェクト ------*/
+
+
+.pre .obj{
+   width:40%;
+   position:relative;
+   display:inline-block;
+   top:0;
+   right:0;
+}
+.pre .obj li{
+   position:absolute;
+}
+.pre .obj li:nth-child(1){/* フキダシ */
+   top:-60px;
+   right:10%;
+   background:none;
+   z-index:11;
+   width:85%;
+}
+.pre .obj li:nth-child(2){/* akari */
+   top:120px;
+   left:0;
+   z-index:10;
+   animation:jump 5s infinite;
+   -webkit-animation:jump 5s infinite;
+   -moz-animation:jump 5s infinite;
+   width:36%;
+}
+.pre .obj li:nth-child(3){/* enju */
+   top:130px;
+   left:40%;
+   z-index:9;
+   animation:jump 6s 1s infinite;
+   -webkit-animation:jump 6s 1s infinite;
+   -moz-animation:jump 6s 1s infinite;
+   width:32%;
+}
+.pre .obj li:nth-child(4){/* ricka */
+   top:140px;
+   right:0%;
+   z-index:9;
+   animation:jump 5s 3s infinite;
+   -webkit-animation:jump 5s 3s infinite;
+   -moz-animation:jump 5s 3s infinite;
+   width:26%;
+}
+.pre .obj li:nth-child(5){/* myu */
+   top:60px;
+   right:10%;
+   z-index:8;
+   animation:jump 6.5s 1.6s infinite;
+   -webkit-animation:jump 6.5s 1.6s infinite;
+   -moz-animation:jump 6.5s 1.6s infinite;
+   width:32%;
+}
+.pre .obj li:nth-child(6){/* tengge */
+   top:60px;
+   left:18%;
+   z-index:8;
+   animation:jump 5s 2s infinite;
+   -webkit-animation:jump 5s 2s infinite;
+   -moz-animation:jump 5s 2s infinite;
+   width:32%;
+}
+
+/*----------------------------------
+
+   ストーリー
+
+----------------------------------*/
+
+
+.story{
+   width:100%;
+   max-height:600px;
+   background:url(../images/top/story_bg_cercle.png) no-repeat center 150px,url(../images/top/story_bg_pattern.png) repeat, -webkit-linear-gradient(45deg, #c57fbc 0%, #ff6b95 100%);
+   background:url(../images/top/story_bg_cercle.png) no-repeat center 150px,url(../images/top/story_bg_pattern.png) repeat, linear-gradient(45deg, #c57fbc 0%, #ff6b95 100%);
+   text-align:center;
+   overflow:hidden;
+   padding:0 0 6%;
+}
+.story h2{
+   width:80%;
+   position:relative;
+   margin:1% auto 30px;
+   z-index:15;
+   padding:4% 0 0 0;
+}
+.story p{
+   width:42.5%;
+   position:relative;
+   z-index:15;
+   background:rgba(255,255,255,0.8);
+   margin:0 auto;
+   font-size:140%;
+   border-radius:10px;
+   padding:45px;
+   text-align:left;
+}
+
+
+/*------ オブジェクト ------*/
+
+
+.story .obj li{
+   position:absolute;
+   z-index:10;
+}
+.story .obj li:nth-child(1){/* enju */
+   top:20%;
+   left:-30%;
+   visibility: hidden;
+   width:90%;
+}
+.story .obj li:nth-child(2){/* akari */
+   top:20%;
+   right:-12%;
+   visibility: hidden;
+   width:70%;
+}
+.story .obj li:nth-child(3){/* cloud1 */
+   top:50px;
+   left:-200px;
+}
+.story .obj li:nth-child(4){/* cloud2 */
+   top:15%;
+   left:-110px;
+}
+.story .obj li:nth-child(5){/* cloud3 */
+   top:320px;
+   left:-180px;
+}
+.story .obj li:nth-child(6){/* cloud4 */
+   top:80px;
+   right:-180px;
+}
+.story .obj li:nth-child(7){/* cloud5 */
+   top:60%;
+   right:-130px;
+}
+.story .obj li:nth-child(8){/* cloud6 */
+   top:420px;
+   right:-180px;
+}
+.story .btn{
+   margin:40px auto 0;
+   cursor:pointer;
+   width:30%;
+   position:relative;
+   z-index:50;
+}
+
+
+
+
+/*----------------------------------
+
+   遊び方
+
+----------------------------------*/
+
+
+.howBox{
+   width:100%;
+   position:relative;
+   background:url(../images/top/how_star.png) no-repeat center,url(../images/top/how_bg.png) repeat;
+   box-shadow:0px -1px 6px -1px rgba(0, 0, 0, 0.5);
+ background-size:100% , auto;
+}
+.how{
+   width:100%;
+   max-height:570px;
+
+   position:relative;
+}
+.how h2{
+   width:75%;
+   position:absolute;
+   top:-10%;
+   left:0%;
+   right:0;
+   margin:0 auto;
+   z-index:35;
+}
+
+/*------ 詳細 ------*/
+
+.how .details{
+   position:relative;
+   text-align:left;
+   background:rgba(255,255,255,0.8);
+   padding:90px 0 60px 50px;
+   border-radius:10px;
+   width:80%;
+   margin:0 auto;
+}
+.how .details p{
+   margin:0 0 3%;
+   position:relative;
+   z-index:33;
+   width:50%;
+   font-size:140%;
+}
+.how .details .img,
+.how .details .btn{
+   display:inline-block;
+}
+.how .details .img{
+   margin:0 30px 0 0;
+   width:40%;
+   position:relative;
+   z-index:35;
+}
+.how .details .btn{
+   position:relative;
+   z-index:33;
+   width:35%;
+}
+
+/*------ オブジェクト ------*/
+
+.how .obj{
+   position:absolute;
+   bottom:0%;
+   right:0%;
+   z-index:20;
+   text-align:right;
+}
+.how .obj .contents{
+   position:absolute;
+}
+.charaBox{
+   height:100%;
+   position: relative;
+   width:100%;
+   max-width:1200px;
+   margin: 0 auto;
+   padding:8% 0;
+
+
+}
+.charaBox .illust{
+   position:absolute;
+   bottom:0;
+   right:-10%;
+   z-index: 32;
+   width:70%;
+   max-width: 800px;
+
+}
+
+/*----------------------------------
+
+   キャラクター
+
+----------------------------------*/
+
+
+.chara h2{
+   position:relative;
+   width:80%;
+   margin:0 auto;
+   z-index:30;
+}
+
+
+
+/*----------------------------------
+
+   news
+
+----------------------------------*/
+
+.news h2{
+   width:80%;
+}
+
+
+.preFooter .details h2{
+   width:50%;
+}
+.downloadFooter .details h2{
+   width:50%;
+}
+
+/*------ オブジェクト ------*/
+
+
+.news .obj li{
+ display:none;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+/*----------------------------------------------------------------------------------------------------
+
+   ★640px以下の場合
+
+----------------------------------------------------------------------------------------------------*/
+
+
+@media screen and (max-width: 640px){
+
+
+
+
+/*----------------------------------
+
+   汎用
+
+----------------------------------*/
+
+
+h1{
+   width:60%;
+   top:5%;
+   right:0;
+}
+.catchcopy{
+   width:95%;
+   bottom:20%;
+   right:0;
+   left:0;
+   margin:0 auto;
+}
+.pv{
+   width:80%;
+   top:-23%;
+   left:0;
+   right:0;
+   margin:0 auto;
+   bottom:auto;
+}
+
+/*------ キャラクター ------*/
+
+
+.main .bg li:nth-child(6){/* akari */
+   z-index:9;
+   left:-57%;
+   top:50%;
+   position:relative;
+ animation:character01 1.2s 1 forwards;
+ -webkit-animation:character01 1.2s 1 forwards;
+ -moz-animation:character01 1.2s 1 forwards;
+ opacity:0;
+}
+.main .bg li:nth-child(6) img{
+   width:120%;
+}
+.main .bg li:nth-child(7){/* enju */
+   z-index:8;
+   right:-15%;
+   bottom:0;
+ animation:character02 0.8s 0.4s 1 forwards;
+ -webkit-animation:character02 0.8s 0.4s 1 forwards;
+ -moz-animation:character02 0.8s 0.4s 1 forwards;
+ opacity:0;
+}
+.main .bg li:nth-child(7) img{
+   width:118%;
+}
+.main .bg li:nth-child(3){/* ricka */
+   right:-63%;
+   top:20%;
+}
+.main .bg li:nth-child(3) img{
+   width:90%;
+}
+.main .bg li:nth-child(4){/* myu */
+   left:23%;
+   top:20%;
+}
+.main .bg li:nth-child(4) img{
+   width:63%;
+}
+.main .bg li:nth-child(5){/* tengge */
+   right:-16%;
+   top:18%;
+}
+.main .bg li:nth-child(5) img{
+   width:75%;
+}
+
+/*----------------------------------
+
+   事前登録キャンペーン
+
+----------------------------------*/
+
+
+.preBox{
+   position:relative;
+}
+
+
+/*------ 詳細 ------*/
+
+.pre .details{
+   width:100%;
+   position:relative;
+   text-align:center;
+   display:inline-block;
+   top:0;
+   left:0%;
+   vertical-align:top;
+   padding:10% 0 3%;
+}
+.pre .details p{
+   vertical-align:middle;
+   text-align:left;
+   width:50%;
+   font-size:200%;
+   display:inline-block;
+}
+.pre .details p span{
+   font-size:100%;
+   color:#ff0645;
+}
+.pre .obj li{
+   display:none;
+}
+.pre .details .btn{
+   margin:3% 0 0 ;
+}
+.pre .details .btn li{
+   width:80%;
+   display:block;
+   cursor:pointer;
+   margin:0 auto 2%;
+}
+.pre .details .btn li:nth-child(3),
+.pre .details .btn li:nth-child(4){
+   display:block;
+}
+.pre .details .btn li:nth-child(1),
+.pre .details .btn li:nth-child(2){
+   display:none;
+}
+.pre .details .akaen{
+   width:38%;
+   display:inline-block;
+}
+.pre .details .akaen img{
+   vertical-align:middle;
+}
+
+/*------ オブジェクト ------*/
+
+
+.pre .obj{
+   width:40%;
+   position:absolute;
+   top:0;
+   right:0;
+}
+
+
+/*----------------------------------
+
+   ダウンロード
+
+----------------------------------*/
+
+
+.downloadBox{
+   position:relative;
+}
+.download{
+   font-family: 'Acme', sans-serif;
+   width:100%;
+   background:url(../images/top/sankaku_bg.png) repeat-x center 90%,url(../images/top/notepad_pattern.jpg) repeat;
+   position:relative;
+   z-index:20;
+}
+.download:before{
+   content:"";
+   background:url(../images/top/notepad_holes.png) repeat-x;
+   height:33px;
+   width:100%;
+   display:block;
+   position:absolute;
+   top:-33px;
+}
+.download:after{
+   content:"";
+   background:url(../images/top/notepad_bottom.png) repeat-x;
+   height:13px;
+   width:100%;
+   display:block;
+   position:absolute;
+   bottom:-13px;
+}
+
+
+/*------ 詳細 ------*/
+
+.download .details{
+   width:100%;
+   position:relative;
+   text-align:center;
+   display:inline-block;
+   top:0;
+   left:0%;
+   vertical-align:top;
+   padding:10% 0 3%;
+}
+.download .details h2{
+   width:68.5%;
+   margin:8% auto 3%;
+}
+.download .details p{
+   margin:0 0 4%;
+   font-size:200%;
+}
+.download .details p span{
+   font-size:110%;
+   color:#ff0645;
+}
+.download .details .btn li{
+   width:70%;
+   display:block;
+   cursor:pointer;
+   margin:0 auto 2%;
+}
+.download .details .akaen{
+   width:38%;
+   display:inline-block;
+}
+.download .details .akaen img{
+   vertical-align:middle;
+}
+
+/*------ オブジェクト ------*/
+
+
+.download .obj{
+ display:none;
+}
+.download .obj li{
+   position:absolute;
+}
+.download .obj li:nth-child(1){/* akari */
+   top:60px;
+   left:0;
+   z-index:10;
+   animation:jump 5s infinite;
+   -webkit-animation:jump 5s infinite;
+   -moz-animation:jump 5s infinite;
+   width:30%;
+}
+.download .obj li:nth-child(2){/* enju */
+   top:70px;
+   left:30%;
+   z-index:9;
+   animation:jump 6s 1s infinite;
+   -webkit-animation:jump 6s 1s infinite;
+   -moz-animation:jump 6s 1s infinite;
+   width:27%;
+}
+.download .obj li:nth-child(3){/* ricka */
+   top:80px;
+   right:15%;
+   z-index:9;
+   animation:jump 5s 3s infinite;
+   -webkit-animation:jump 5s 3s infinite;
+   -moz-animation:jump 5s 3s infinite;
+   width:22%;
+}
+.download .obj li:nth-child(4){/* myu */
+   top:0px;
+   right:25%;
+   z-index:8;
+   animation:jump 6.5s 1.6s infinite;
+   -webkit-animation:jump 6.5s 1.6s infinite;
+   -moz-animation:jump 6.5s 1.6s infinite;
+   width:27%;
+}
+.download .obj li:nth-child(5){/* tengge */
+   top:10px;
+   left:18%;
+   z-index:8;
+   animation:jump 5s 2s infinite;
+   -webkit-animation:jump 5s 2s infinite;
+   -moz-animation:jump 5s 2s infinite;
+   width:27%;
+}
+
+/*----------------------------------
+
+   ストーリー
+
+----------------------------------*/
+
+
+.story{
+   width:100%;
+   max-height:none;
+   background:url(../images/top/story_bg_cercle.png) no-repeat center -50px,url(../images/top/story_bg_pattern.png) repeat, -webkit-linear-gradient(45deg, #c57fbc 0%, #ff6b95 100%);
+   background:url(../images/top/story_bg_cercle.png) no-repeat center -50px,url(../images/top/story_bg_pattern.png) repeat, linear-gradient(45deg, #c57fbc 0%, #ff6b95 100%);
+   text-align:center;
+   overflow:hidden;
+   padding:0 0 0;
+}
+.story h2{
+   width:100%;
+   position:relative;
+   margin:0 auto 30px;
+   z-index:15;
+   padding:60px 0 0 0;
+}
+.story p{
+   width:80%;
+   position:relative;
+   z-index:15;
+   background:rgba(255,255,255,0.8);
+   margin:0 auto;
+   font-size:140%;
+   border-radius:10px;
+   padding:5%;
+   text-align:left;
+}
+
+
+/*------ オブジェクト ------*/
+
+
+.story .obj{
+   display:block;
+   position:relative;
+}
+.story .obj li{
+   position:absolute;
+   z-index:10;
+}
+.story .obj li img{
+ vertical-align:bottom;
+}
+.story .obj li:nth-child(9){/* enju */
+   position:relative;
+   bottom:0;
+   left:10%;
+   width:115%;
+   z-index:9;
+}
+.story .obj li:nth-child(10){/* akari */
+   position:absolute;
+   bottom:0;
+   right:30%;
+   width:90%;
+   z-index:9;
+}
+.story .obj li:nth-child(3){/* cloud1 */
+   top:-50%;
+   left:-10%;
+   width:25%;
+}
+.story .obj li:nth-child(4){/* cloud2 */
+   top:-20%;
+   left:0px;
+   width:25%;
+}
+.story .obj li:nth-child(5){/* cloud3 */
+   top:20%;
+   left:-15%;
+   width:40%;
+}
+.story .obj li:nth-child(6){/* cloud4 */
+   top:-50%;
+   right:-10%;
+   width:25%;
+}
+.story .obj li:nth-child(7){/* cloud5 */
+   top:-20%;
+   right:-10%;
+   width:35%;
+}
+.story .obj li:nth-child(8){/* cloud6 */
+   top:20%;
+   right:-10%;
+   width:40%;
+}
+.story .btn{
+   margin:40px auto 0;
+   cursor:pointer;
+   width:45%;
+   position:relative;
+   z-index:100;
+}
+
+
+/*----------------------------------
+
+   遊び方
+
+----------------------------------*/
+
+
+.howBox{
+   width:100%;
+   position:relative;
+   background:url(../images/top/how_star_sp.png) no-repeat 0 90%,url(../images/top/how_bg.png) repeat;
+   background-size:100%,auto;
+   box-shadow:0px -1px 6px -1px rgba(0, 0, 0, 0.5);
+}
+.how{
+   width:100%;
+   max-height:570px;
+
+   position:relative;
+}
+.how h2{
+   width:100%;
+   position:relative;
+   top:0%;
+   left:0;
+   z-index:32;
+}
+
+/*------ 詳細 ------*/
+
+.how .details{
+   position:relative;
+   text-align:left;
+   background:rgba(255,255,255,0.8);
+   padding:5% 3%;
+   border-radius:10px;
+   width:90%;
+   margin:5% auto 0;
+}
+.how .details p{
+   margin:0 auto 3%;
+   position:relative;
+   z-index:33;
+   width:100%;
+   font-size:140%;
+}
+.how .details .img,
+.how .details .btn{
+   display:block;
+}
+
+.how .details .imgs{
+ margin: 5% 10% 0;
+}
+.how .details .img{
+   width:100%;
+}
+.how .details .btn{
+   position:relative;
+   z-index:33;
+   width:58%;
+   margin:5% auto 0;
+}
+
+/*------ オブジェクト ------*/
+
+.how .obj{
+   position:absolute;
+   bottom:0%;
+   right:0%;
+   z-index:20;
+   text-align:right;
+}
+.how .obj .contents{
+   position:absolute;
+}
+.charaBox{
+   height:100%;
+   position: relative;
+   width:100%;
+   max-width:1200px;
+   margin: 0 auto;
+   padding:8% 0 100%;
+
+
+}
+.charaBox .illust{
+   position:absolute;
+   bottom:0;
+   right:-5%;
+   margin:0 auto;
+   z-index: 32;
+   width:100%;
+   max-width: 800px;
+
+}
+
+
+
+/*----------------------------------
+
+   キャラクター
+
+----------------------------------*/
+
+
+.chara{
+   width:100%;
+   background:no-repeat,url(../images/top/chara_bg.jpg) repeat;
+   padding:5% 0;
+   text-align:center;
+   overflow:hidden;
+   box-shadow:0px -1px 6px -1px rgba(0, 0, 0, 0.3);
+}
+.chara h2{
+   position:relative;
+   width:100%;
+   margin:0 auto;
+   z-index:30;
+}
+.chara .member{
+   position:relative;
+   z-index:30;
+   overflow:hidden;
+   margin:3% 0 0 0;
+   letter-spacing: -.40em;/* inline-blockの隙間防止 */
+}
+.chara .member li{
+   width:25%;
+   display:inline-block;
+   letter-spacing:nomal;/* inline-blockの隙間防止 */
+}
+.chara .bg{
+   clear:both;
+}
+.chara .bg li{
+   position:absolute;
+   z-index:25;
+}
+.chara .bg li:nth-child(1){
+   top:-30%;
+   left:0;
+ right:0;
+ margin:0 auto;
+}
+.chara .bg li:nth-child(2){
+   bottom:-140%;
+   left:-30%;
+}
+.chara .bg li:nth-child(3){
+   bottom:-70%;
+   right:-20%;
+}
+
+
+
+/*----------------------------------
+
+   news
+
+----------------------------------*/
+
+.news{
+   width:100%;
+   background:url(../images/top/news_bg.png) repeat-x center 300px,#FF9AB0;
+   text-align:center;
+   padding:0 0 40px;
+   box-shadow:0px -1px 6px -1px rgba(0, 0, 0, 0.5);
+}
+.news h2{
+   position:relative;
+   z-index:30;
+   width:100%;
+   padding:5% 0 0 0;
+   margin:0 auto 3%;
+}
+
+
+/*------ オブジェクト ------*/
+
+
+.news .obj li{
+   z-index:29;
+   position:absolute;
+}
+.news .obj li:nth-child(1){
+   left:-40px;
+   top:-10px;
+   width:28%;
+}
+.news .obj li:nth-child(2){
+   right:40px;
+   top:-20px;
+   width:22%;
+}
+.news .obj li:nth-child(3){
+   left:-135px;
+   top:30px;
+   width:18%;
+}
+.news .obj li:nth-child(4){
+   right:-135px;
+   top:30px;
+   width:18%;
+}
+
+
+/*------ sns ------*/
+
+.news .snsBox{
+   width:95%;
+   padding:5px 0;
+   text-align:center;
+   background:-webkit-linear-gradient(left, #b39e68 0%, #fef4e2 50%, #b39e68 100%);
+   border-radius:10px;
+   border:solid 1px #000;
+   position:relative;
+   z-index:33;
+   margin:0 0 3%;
+   display:inline-block;
+}
+.news .left:after{/* twitter */
+   content:"";
+   background:url(../images/top/news_tw_obj.png) no-repeat;
+   position:absolute;
+   left:-10px;
+   top:-10px;
+   width:80px;
+   height:83px;
+}
+.news .right:after{/* facebook */
+   content:"";
+   background:url(../images/top/news_fb_obj.png) no-repeat;
+   position:absolute;
+   right:-10px;
+   top:-10px;
+   width:80px;
+   height:83px;
+}
+.news .sns{
+   width:94%;
+   margin:0 auto;
+   background:#ff69a1;
+   padding:2%;
+   border-radius:10px;
+   border:solid 1px #000;
+}
+.news .sns .cap{
+   width:78%;
+   margin:10px auto;
+}
+
+
+
+
+/*----------------------------------
+
+   事前登録キャンペーン（下部）
+
+----------------------------------*/
+
+
+.preFooterBox{
+   position:relative;
+   z-index:100;
+}
+.preFooter{
+   width:100%;
+   padding:20px 0;
+   background:url(../images/top/sankaku_bg.png) repeat-x center 150px,url(../images/top/notepad_pattern.jpg) repeat;
+   position:absolute;
+   top:0;
+}
+.preFooter:before{
+   content:"";
+   background:url(../images/top/notepad_top.png) repeat-x;
+   height:13px;
+   width:100%;
+   display:block;
+   position:absolute;
+   top:-13px;
+}
+.preFooter:after{
+   content:"";
+   background:url(../images/top/notepad_holes.png) repeat-x;
+   height:33px;
+   width:100%;
+   display:block;
+   position:absolute;
+   bottom:-33px;
+}
+
+/*------ 詳細 ------*/
+
+.preFooter .details{
+   text-align:center;
+   vertical-align:top;
+}
+.preFooter .details h2{
+   margin:20px auto 35px;
+   width:80%;
+}
+.preFooter .details p{
+   margin:0 0 20px;
+}
+.preFooter .details .btn li{
+   width:80%;
+   margin:0 auto 2%;
+}
+.preFooter .details .btn li:nth-child(3),
+.preFooter .details .btn li:nth-child(4){
+   display:block;
+}
+.preFooter .details .btn li:nth-child(1),
+.preFooter .details .btn li:nth-child(2){
+   display:none;
+}
+
+
+
+
+/*----------------------------------
+
+   ダウンロード（下部）
+
+----------------------------------*/
+
+
+.downloadFooterBox{
+   position:relative;
+   z-index:100;
+}
+.downloadFooter{
+   width:100%;
+   padding:20px 0;
+   background:url(../images/top/sankaku_bg.png) repeat-x center 150px,url(../images/top/notepad_pattern.jpg) repeat;
+}
+.downloadFooter:before{
+   content:"";
+   background:url(../images/top/notepad_top.png) repeat-x;
+   height:13px;
+   width:100%;
+   display:block;
+   position:absolute;
+   top:-13px;
+}
+.downloadFooter:after{
+   content:"";
+   background:url(../images/top/notepad_holes.png) repeat-x;
+   height:33px;
+   width:100%;
+   display:block;
+   position:absolute;
+   bottom:-33px;
+}
+
+/*------ 詳細 ------*/
+
+.downloadFooter .details{
+   text-align:center;
+   vertical-align:top;
+}
+.downloadFooter .details h2{
+   margin:20px auto 35px;
+   width:80%;
+}
+.downloadFooter .details p{
+   margin:0 0 20px;
+}
+.downloadFooter .details .btn li{
+   width:80%;
+   margin:0 auto 2%;
+}
+
+
+
+/*----------------------------------
+
+   footer
+
+----------------------------------*/
+
+
+
+footer{
+   padding: 15% 0 5% 0;
+}
+
+
+
+
+
+
+
+}

@@ -1,0 +1,952 @@
+ @charset "utf-8";
+/* CSS Document */
+/* characters.css */
+/****************************************************************************************
+
+	キャラクター
+
+****************************************************************************************/
+
+/*====================================
+
+----------------------------------
+目次
+----------------------------------
+
+0. 共通設定
+    0.1 キャラクター位置
+    0.2 キャラクター詳細
+		・帯
+		・文章
+		・名前
+	0.3 キャラクター一覧
+	0.4 チェンジボタン
+	0.5 飾り
+		・雲
+		
+1.  キャラクター別設定
+    1.1 変身後の位置
+		・enju
+		・ricka
+		・myu
+		
+2.  ページの色設定
+    2.1 青
+    2.2 ピンク
+    2.3 緑
+    2.4 水色
+    2.5 オレンジ
+    2.6 紫
+    2.7 黄色
+    2.8 茶色
+    2.9 灰色
+
+特殊サイズ対応：@media screen and (max-width: 1000px)
+tb対応：@media screen and (max-width: 800px)	
+sp対応：@media screen and (max-width: 640px)　各パーツ直下
+
+++++++++++　comment　++++++++++
+
+レスポンシブ対応ですので、変更・追加する場合は各media screenにも対応させてください。
+
+
+====================================*/
+
+
+
+
+/*************************************************
+	
+	0.　共通設定
+
+*************************************************/
+
+
+.charaBox{
+	position:relative;
+	width:100%;
+	display:block;
+}
+
+/*++++++++++++　1 キャラクター位置　++++++++++++*/
+
+.charaImgBox{
+	width:100%;
+	text-align:right;
+	position:relative;
+	z-index:10;
+}
+.charaImg{
+	position:relative;
+}
+.charaImgBox img{
+	width:auto;
+	vertical-align:bottom;
+}
+
+/*++++++++++++　2 キャラクター詳細　++++++++++++*/
+
+
+/*--- 帯 ---*/
+
+.detailBox{
+	width:100%;
+	padding:3% 0 2%;
+	position:absolute;
+	top:20%;
+	left:0;
+}
+.detailBox:before{
+	content:"";
+	position:absolute;
+	height:11px;
+	width:100%;
+	display:block;
+	top:-11px;
+	left:0;
+}
+.detailBox:after{
+	content:"";
+	position:absolute;
+	height:11px;
+	width:100%;
+	display:block;
+	bottom:-11px;
+	left:0;
+}
+
+/*--- 文章 ---*/
+
+.outline{
+	width:58%;
+}
+.outline{
+	color:#FFF;
+	padding:3% 2%;
+	border-radius:10px;
+	position:relative;
+	z-index:30;
+	margin:0 0 0 2%;
+}
+.outline .serif{
+	font-size:150%;
+	font-weight:bold;
+	margin:0 0 2%;
+	padding:2% 5%;
+	border-radius:50px;
+}
+
+/*--- 名前 ---*/
+
+.name{
+	position:absolute;
+	top:7%;
+	left:0;
+	z-index:30;
+	width:60%;
+	margin:0 0 0 1%;
+	text-align:left;
+}
+.name img{
+	width:auto;
+}
+
+/*++++++++++++　3 キャラクター一覧　++++++++++++*/
+
+.charaList{
+	width:64%;
+	height:auto;
+	position:relative;
+	z-index:30;
+	display:block;
+	overflow:hidden;
+	margin:3% 0 0 1.5%;
+}
+.charaList li{
+	width:18%;
+	display:inline-block;
+	margin:1% 0.5%;
+}
+
+/*++++++++++++　4 チェンジボタン　++++++++++++*/
+
+.transformBtn{
+	position:absolute;
+	top:0;
+	right:0;
+	z-index:30;
+	cursor:pointer;
+	width:auto;
+	background:url(../images/characters/chara_btn_transform_on.png) no-repeat;
+	background-size:100%;
+}
+.transformBtn img{
+	transition:all 0.3s ease;
+}
+.transformBtn img:hover{
+	opacity:0;
+}
+
+
+/*++++++++++++　5 飾り　++++++++++++*/
+
+/*--- 雲 ---*/
+
+.cloud li{
+	position:absolute;
+}
+.cloud li:nth-child(1){
+	top:30px;
+	right:300px;
+	animation:cloud ease-in-out 4s infinite alternate;
+	-webkit-animation:cloud ease-in-out 4s infinite alternate;
+	-moz-animation:cloud ease-in-out 4s infinite alternate;
+}
+.cloud li:nth-child(2){
+	top:140px;
+	right:0px;
+	animation:cloud ease-in-out 3s infinite alternate;
+	-webkit-animation:cloud ease-in-out 3s infinite alternate;
+	-moz-animation:cloud ease-in-out 3s infinite alternate;
+}
+.cloud li:nth-child(3){
+	bottom:20px;
+	right:230px;
+	animation:cloud ease-in-out 3s infinite alternate-reverse;
+	-webkit-animation:cloud ease-in-out 3s infinite alternate-reverse;
+	-moz-animation:cloud ease-in-out 3s infinite alternate-reverse;
+}
+
+/*--- 雲のアニメーション ---*/
+
+@keyframes cloud{
+	0%   { transform:translate(0%, 0%);  opacity:1;}
+	100% { transform:translate(-30px, 0%); opacity:0;}
+}
+@-webkit-keyframes cloud{
+	0%   { -webkit-transform:translate(0%, 0%);  opacity:1;}
+	100% { -webkit-transform:translate(-30px, 0%); opacity:0;}
+}
+@-moz-keyframes cloud{
+	0%   { -moz-transform:translate(0%, 0%);  opacity:1;}
+	100% { -moz-transform:translate(-30px, 0%); opacity:0;}
+}
+
+
+
+
+
+/*************************************************
+	
+	1.　キャラクター別の設定
+
+*************************************************/
+
+
+/*++++++++++++　1. 変身後の位置　++++++++++++*/
+
+
+/*--- enju ---*/
+
+.enju .charaImg2{
+	position:relative;
+	right:-10%;
+}
+
+/*--- ricka ---*/
+
+.ricka .charaImg2{
+	position:relative;
+	right:-30%;
+}
+
+/*--- myu ---*/
+
+.myu .charaImg2{
+	position:relative;
+	right:-10%;
+}
+
+/*--- yamabuki ---*/
+
+.yamabuki .charaImg2{
+	position:relative;
+	top:-80px;
+	right:-10%;
+}
+/*--- lily ---*/
+
+.lily .charaImg2{
+	position:relative;
+	top:-80px;
+	right:-10%;
+}
+
+/*--- nanao ---*/
+
+.nanao .charaImg2{
+	position:relative;
+	top:-120px;
+	right:-25%;
+}
+
+
+
+/*************************************************
+	
+	2.　ページの色設定
+
+*************************************************/
+
+
+/*++++++++++++　1. 青　++++++++++++*/
+
+
+/*--- ストライプ ---*/
+.blue{
+	background:url(../images/characters/chara_bg_blue.jpg) repeat;
+}
+/*--- 帯背景色 ---*/
+.blue .detailBox{
+	background:#6185C7;
+}
+/*--- 帯もこもこ上 ---*/
+.blue .detailBox:before{
+	background:url(../images/characters/chara_moko_blue.png) repeat-x 0 -1px;
+	background-size:53px 13px;
+}
+/*--- 帯もこもこ下 ---*/
+.blue .detailBox:after{
+	background:url(../images/characters/chara_moko_blue_2.png) repeat-x 0 -1px;
+	background-size:53px 13px;
+}
+/*--- 文章背景 ---*/
+.blue .outline{
+	background:#46659f;
+	box-shadow: 0 0 0 3px #6185C7, 0 0 0 6px #46659f;
+}
+/*--- セリフ背景 ---*/
+.blue .detailBox .serif{
+	background:#374d76;
+}
+
+
+/*++++++++++++　2. ピンク　++++++++++++*/
+
+
+/*--- ストライプ ---*/
+.pink{
+	background:url(../images/characters/chara_bg_pink.jpg) repeat;
+}
+/*--- 帯背景色 ---*/
+.pink .detailBox{
+	background:#f78d9e;
+}
+/*--- 帯もこもこ上 ---*/
+.pink .detailBox:before{
+	background:url(../images/characters/chara_moko_pink.png) repeat-x 0 -1px;
+	background-size:53px 13px;
+}
+/*--- 帯もこもこ下 ---*/
+.pink .detailBox:after{
+	background:url(../images/characters/chara_moko_pink_2.png) repeat-x 0 -1px;
+	background-size:53px 13px;
+}
+/*--- 文章背景 ---*/
+.pink .outline{
+	background:rgba(244,95,119,0.8);
+	box-shadow: 0 0 0 3px #f78d9e, 0 0 0 6px #F4687F;
+}
+/*--- セリフ背景 ---*/
+.pink .detailBox .serif{
+	background:#cb4c61;
+}
+
+
+/*++++++++++++　3. 緑　++++++++++++*/
+
+
+/*--- ストライプ ---*/
+.green{
+	background:url(../images/characters/chara_bg_green.jpg) repeat;
+}
+/*--- 帯背景色 ---*/
+.green .detailBox{
+	background:#49a555;
+}
+/*--- 帯もこもこ上 ---*/
+.green .detailBox:before{
+	background:url(../images/characters/chara_moko_green.png) repeat-x 0 -1px;
+	background-size:53px 13px;
+}
+/*--- 帯もこもこ下 ---*/
+.green .detailBox:after{
+	background:url(../images/characters/chara_moko_green_2.png) repeat-x 0 -1px;
+	background-size:53px 13px;
+}
+/*--- 文章背景 ---*/
+.green .outline{
+	background:#308c3c;
+	box-shadow: 0 0 0 3px #49a555, 0 0 0 6px #308c3c;
+}
+/*--- セリフ背景 ---*/
+.green .detailBox .serif{
+	background:#49a555;
+}
+
+
+/*++++++++++++　4. 水色　++++++++++++*/
+
+
+/*--- ストライプ ---*/
+.lightblue{
+	background:url(../images/characters/chara_bg_lightblue.jpg) repeat;
+}
+/*--- 帯背景色 ---*/
+.lightblue .detailBox{
+	background:#54C9C9;/* もこもこ背景 */
+}
+/*--- 帯もこもこ上 ---*/
+.lightblue .detailBox:before{
+	background:url(../images/characters/chara_moko_lightblue.png) repeat-x 0 -1px;
+	background-size:53px 13px;
+}
+/*--- 帯もこもこ下 ---*/
+.lightblue .detailBox:after{
+	background:url(../images/characters/chara_moko_lightblue_2.png) repeat-x 0 -1px;
+	background-size:53px 13px;
+}
+/*--- 文章背景 ---*/
+.lightblue .outline{
+	background:#52aaaa;
+	box-shadow: 0 0 0 3px #54C9C9, 0 0 0 6px #52aaaa;
+}
+/*--- セリフ背景 ---*/
+.lightblue .detailBox .serif{
+	background:#248181;
+}
+
+
+/*++++++++++++　5. オレンジ　++++++++++++*/
+
+
+/*--- ストライプ ---*/
+.orange{
+	background:url(../images/characters/chara_bg_orange.jpg) repeat;
+}
+/*--- 帯背景色 ---*/
+.orange .detailBox{
+	background:#FFB44A;
+}
+/*--- 帯もこもこ上 ---*/
+.orange .detailBox:before{
+	background:url(../images/characters/chara_moko_orange.png) repeat-x 0 -1px;
+	background-size:53px 13px;
+}
+/*--- 帯もこもこ下 ---*/
+.orange .detailBox:after{
+	background:url(../images/characters/chara_moko_orange_2.png) repeat-x 0 -1px;
+	background-size:53px 13px;
+}
+/*--- 文章背景 ---*/
+.orange .outline{
+	background:#ed961b;
+	box-shadow: 0 0 0 3px #FFB44A, 0 0 0 6px #ed961b;
+}
+/*--- セリフ背景 ---*/
+.orange .detailBox .serif{
+	background:#c97b0c;
+}
+
+
+/*++++++++++++　6. 紫　++++++++++++*/
+
+
+/*--- ストライプ ---*/
+.purple{
+	background:url(../images/characters/chara_bg_purple.jpg) repeat;
+}
+/*--- 帯背景色 ---*/
+.purple .detailBox{
+	background:#9f87c1;
+}
+/*--- 帯もこもこ上 ---*/
+.purple .detailBox:before{
+	background:url(../images/characters/chara_moko_purple.png) repeat-x 0 -1px;
+	background-size:53px 13px;
+}
+/*--- 帯もこもこ下 ---*/
+.purple .detailBox:after{
+	background:url(../images/characters/chara_moko_purple_2.png) repeat-x 0 -1px;
+	background-size:53px 13px;
+}
+/*--- 文章背景 ---*/
+.purple .outline{
+	background:#866fa7;
+	box-shadow: 0 0 0 3px #9f87c1, 0 0 0 6px #866fa7;
+}
+/*--- セリフ背景 ---*/
+.purple .detailBox .serif{
+	background:#654a8c;
+}
+
+
+/*++++++++++++　7. 黄色　++++++++++++*/
+
+
+/*--- ストライプ ---*/
+.yellow{
+	background:url(../images/characters/chara_bg_yellow.jpg) repeat;
+}
+/*--- 帯背景色 ---*/
+.yellow .detailBox{
+	background:#c6a72a;
+}
+/*--- 帯もこもこ上 ---*/
+.yellow .detailBox:before{
+	background:url(../images/characters/chara_moko_yellow.png) repeat-x 0 -1px;
+	background-size:53px 13px;
+}
+/*--- 帯もこもこ下 ---*/
+.yellow .detailBox:after{
+	background:url(../images/characters/chara_moko_yellow_2.png) repeat-x 0 -1px;
+	background-size:53px 13px;
+}
+/*--- 文章背景 ---*/
+.yellow .outline{
+	background:#ad901a;
+	box-shadow: 0 0 0 3px #c6a72a, 0 0 0 6px #ad901a;
+}
+/*--- セリフ背景 ---*/
+.yellow .detailBox .serif{
+	background:#856f14;
+}
+
+
+/*++++++++++++　8. 茶色　++++++++++++*/
+
+
+/*--- ストライプ ---*/
+.brown{
+	background:url(../images/characters/chara_bg_brown.jpg) repeat;
+}
+/*--- 帯背景色 ---*/
+.brown .detailBox{
+	background:#AE5F2B;
+}
+/*--- 帯もこもこ上 ---*/
+.brown .detailBox:before{
+	background:url(../images/characters/chara_moko_brown.png) repeat-x 0 -1px;
+	background-size:53px 13px;
+}
+/*--- 帯もこもこ下 ---*/
+.brown .detailBox:after{
+	background:url(../images/characters/chara_moko_brown_2.png) repeat-x 0 -1px;
+	background-size:53px 13px;
+}
+/*--- 文章背景 ---*/
+.brown .outline{
+	background:#954d1e;
+	box-shadow: 0 0 0 3px #AE5F2B, 0 0 0 6px #954d1e;
+}
+/*--- セリフ背景 ---*/
+.brown .detailBox .serif{
+	background:#753810;
+}
+
+
+/*++++++++++++　9. 灰色　++++++++++++*/
+
+
+/*--- ストライプ ---*/
+.gray{
+	background:url(../images/characters/chara_bg_gray.jpg) repeat;
+}
+/*--- 帯背景色 ---*/
+.gray .detailBox{
+	background:#757575;
+}
+/*--- 帯もこもこ上 ---*/
+.gray .detailBox:before{
+	background:url(../images/characters/chara_moko_gray.png) repeat-x 0 -1px;
+	background-size:53px 13px;
+}
+/*--- 帯もこもこ下 ---*/
+.gray .detailBox:after{
+	background:url(../images/characters/chara_moko_gray_2.png) repeat-x 0 -1px;
+	background-size:53px 13px;
+}
+/*--- 文章背景 ---*/
+.gray .outline{
+	background:#575757;
+	box-shadow: 0 0 0 3px #757575, 0 0 0 6px #575757;
+}
+
+/*--- セリフ背景 ---*/
+.gray .detailBox .serif{
+	background:#3c3c3c;
+}
+
+
+/*----------------------------------------------------------------------------------------------------
+
+	★1000px以下の場合
+
+----------------------------------------------------------------------------------------------------*/
+
+
+@media screen and (max-width: 1000px){
+
+
+/*************************************************
+	
+	共通設定
+
+*************************************************/
+
+
+/*++++++++++++　キャラクター位置　++++++++++++*/
+
+.charaImgBox{
+	width:100%;
+	text-align:right;
+	position:relative;
+	z-index:10;
+}
+.charaImg{
+	position:relative;
+	right:-3%;
+}
+.charaImgBox img{
+	width:auto;
+}
+
+/*++++++++++++　キャラクター詳細　++++++++++++*/
+
+
+/*--- 名前 ---*/
+
+.fullName{
+	display:none;
+}
+.fullNameSp{
+	display:block;
+}
+.name{
+	position:absolute;
+	top:0%;
+	left:0;
+	z-index:30;
+	width:60%;
+	margin:0 0 0 1%;
+	text-align:left;
+}
+.name img{
+	width:auto;
+}
+
+
+/*************************************************
+	
+	キャラクター別の設定
+
+*************************************************/
+
+
+/*++++++++++++　名前が一行の位置（例：「you」等）　++++++++++++*/
+
+/*--- you ---*/
+
+.you .name{
+	top:10%;
+}
+
+
+/*++++++++++++　変身後の位置　++++++++++++*/
+
+/*--- enju ---*/
+
+.enju .charaImg2{
+	position:relative;
+	right:-10%;
+}
+
+/*--- ricka ---*/
+
+.ricka .charaImg2{
+	position:relative;
+	right:-40%;
+}
+
+/*--- myu ---*/
+
+.myu .charaImg2{
+	position:relative;
+	right:-20%;
+}
+	
+}
+
+
+
+
+
+/*----------------------------------------------------------------------------------------------------
+
+	★800px以下の場合
+
+----------------------------------------------------------------------------------------------------*/
+
+
+@media screen and (max-width: 800px){
+
+
+/*************************************************
+	
+	共通設定
+
+*************************************************/
+
+
+/*++++++++++++　キャラクター位置　++++++++++++*/
+
+
+.charaImgBox{
+	width:100%;
+	text-align:right;
+	position:relative;
+	z-index:10;
+}
+.charaImg{
+	position:relative;
+	right:-3%;
+}
+.charaImgBox img{
+	width:auto;
+}
+
+
+/*++++++++++++　キャラクター詳細　++++++++++++*/
+
+
+/*--- 名前 ---*/
+
+.name{
+	position:absolute;
+	top:0%;
+	left:0;
+	z-index:30;
+	width:60%;
+	margin:0 0 0 1%;
+	text-align:left;
+}
+.name img{
+	width:auto;
+}
+
+/*--- 文章 ---*/
+
+.outline{
+	width:58%;
+}
+.outline{
+	color:#FFF;
+	padding:3% 2%;
+	border-radius:10px;
+	position:relative;
+	z-index:30;
+	margin:0 0 0 2%;
+}
+.outline .serif{
+	font-size:150%;
+	font-weight:bold;
+	margin:0 0 2%;
+	padding:2% 5%;
+	border-radius:30px;
+}
+
+
+
+/*************************************************
+	
+	キャラクター別の設定
+
+*************************************************/
+
+/*++++++++++++　変身後の位置　++++++++++++*/
+
+/*--- myu ---*/
+
+.myu .charaImg2{
+	position:relative;
+	right:-30%;
+}
+
+
+}
+
+
+/*----------------------------------------------------------------------------------------------------
+
+	★640px以下の場合
+
+----------------------------------------------------------------------------------------------------*/
+
+
+@media screen and (max-width: 640px){
+	
+
+/*************************************************
+	
+	共通設定
+
+*************************************************/
+
+
+/*++++++++++++　キャラクター詳細　++++++++++++*/
+
+
+/*--- 帯 ---*/
+
+.detailBox{
+	width:100%;
+	padding:3% 0 2%;
+	position:relative;
+	top:20%;
+	left:0;
+}
+.detailBox:before{
+	content:"";
+	position:absolute;
+	height:11px;
+	width:100%;
+	display:block;
+	top:-11px;
+	left:0;
+	z-index:100;
+}
+.detailBox:after{
+	content:"";
+	position:absolute;
+	height:11px;
+	width:100%;
+	display:block;
+	bottom:-11px;
+	left:0;
+}
+	
+/*--- 文章 ---*/
+
+.outline{
+	width:92%;
+	color:#FFF;
+	padding:3% 2%;
+	border-radius:10px;
+	position:relative;
+	z-index:30;
+	margin:0 0 0 2%;
+}
+.outline .serif{
+	font-size:120%;
+	font-weight:bold;
+	margin:0 0 2%;
+	padding:3%;
+	border-radius:10px;
+}
+
+
+/*++++++++++++　キャラクター位置　++++++++++++*/
+
+.charaImgBox{
+	width:100%;
+	text-align:right;
+	position:relative;
+	z-index:10;
+}
+.charaImg{
+	position:relative;
+	right:0;
+	width:100%;
+}
+.charaImgBox img{
+	width:100%;
+	max-width:auto;
+}
+
+/*++++++++++++　キャラクター一覧　++++++++++++*/
+
+.charaList{
+	width:100%;
+	height:auto;
+	position:relative;
+	z-index:30;
+	display:block;
+	overflow:hidden;
+	margin:3% 0 0 1.5%;
+}
+.charaList li{
+	width:30%;
+	display:inline-block;
+	margin:1% 0.5%;
+}
+
+
+/*++++++++++++　チェンジボタン　++++++++++++*/
+
+
+.transformBtn{
+	position:absolute;
+	top:auto;
+	bottom:40%;
+	right:auto;
+	left:2%;
+	z-index:30;
+	cursor:pointer;
+	width:20%;
+}
+
+
+
+/*************************************************
+	
+	キャラクター別の設定
+
+*************************************************/
+
+
+/*++++++++++++　名前が一行の位置（例：「you」等）　++++++++++++*/
+
+/*--- you ---*/
+
+.name,
+.you .name{
+	position:absolute;
+	top:auto;
+	bottom:5%;
+	left:0;
+	z-index:30;
+	width:50%;
+	margin:0 0 0 1%;
+	text-align:left;
+}
+.name img{
+	width:100%;
+}
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
